@@ -1,10 +1,10 @@
 import React from 'react'
-import Image from 'next/image'
+
 // import logoNavbar from "../assets/logo_blanco.png"
 import logoNico2 from "../assets/logo_blanco_recortada.png"
 import nicoIntro_1 from "../assets/Nico_intro_1.jpg"
 import nicoIntro_2 from "../assets/Nico_intro_2.jpg"
-import nicoHistoria from "../assets/nico_historia.jpg"
+import nicoHistoria from "../assets/Nico_historia.jpg"
 import nicoTransformacion_1 from "../assets/Nico_transformacion_1.1.jpeg"
 import nicoTransformacion_2 from "../assets/Nico_transformacion_2.1.jpeg"
 
@@ -36,8 +36,8 @@ function Intro() {
                 </aside>
 
                 <div className="grid grid-cols-2 gap-4">
-                    <Image className="w-full rounded-lg" src={nicoIntro_1} alt="office content 1"/>
-                    <Image className="mt-4 w-full lg:mt-10 rounded-lg" src={nicoIntro_2} alt="office content 2"/>
+                    <img className="w-full rounded-lg" src={nicoIntro_1} alt="office content 1"/>
+                    <img className="mt-4 w-full lg:mt-10 rounded-lg" src={nicoIntro_2} alt="office content 2"/>
                 </div>
             </article>
         </section>
@@ -47,23 +47,23 @@ function Intro() {
         <aside className='flex justify-center items-center'>
             <div className='bg-white'></div>
             <div className='bg-[#040404]'>
-                <Image src={logoNico2} alt="nicolásMarban Logo" className="px-4 h-32 w-auto"/>
+                <img src={logoNico2} alt="nicolásMarban Logo" className="px-4 h-32 w-auto"/>
             </div>
             <div className='bg-white'></div>
         </aside>
         {/* LÍNEA DIVISORIA CON LOGO NICO */}
 
         {/* MI HISTORIA */}
-        <section class="bg-[#040404] dark:bg-gray-900" id="info">
-            <article class="items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:items-start lg:py-16 lg:px-6">
-                <Image class="w-4/5 rounded-lg" src={nicoHistoria} alt="office content 1"/>
+        <section className="bg-[#040404] dark:bg-gray-900" id="info">
+            <article className="items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:items-start lg:py-16 lg:px-6">
+                <img className="w-4/5 rounded-lg" src={nicoHistoria} alt="office content 1"/>
 
-                <div class="flex flex-col font-light text-white sm:text-lg dark:text-gray-400">
-                    <h2 class="self-center mb-4 text-4xl text-center font-extrabold text-white p-3 border border-white rounded-md dark:text-white tracking-tight"> 
+                <div className="flex flex-col font-light text-white sm:text-lg dark:text-gray-400">
+                    <h2 className="self-center mb-4 text-4xl text-center font-extrabold text-white p-3 border border-white rounded-md dark:text-white tracking-tight"> 
                         MI HISTORIA 
                     </h2>
-                    <p class="my-4 text-white">
-                        <span class="font-bold">¡HOLA!</span>, Soy <span class="font-bold">Nicolás Marbán</span> 👋🏻 
+                    <p className="my-4 text-white">
+                        <span className="font-bold">¡HOLA!</span>, Soy <span className="font-bold">Nicolás Marbán</span> 👋🏻 
                     </p>
                         <p>
                             Hace muchos años atrás no llevaba una vida saludable, no me alimentaba 
@@ -84,7 +84,7 @@ function Intro() {
                             Les cuento esto para que vean que se puede, esta es una parte de mi pequeña historia, y no tengo dudas
                             que con mi equipo podemos ayudarte para que puedas superarte día a día. 
                         </p>        
-                        <span class="my-4 text-white font-bold">¡ENTRENA CONMIGO!</span>
+                        <span className="my-4 text-white font-bold">¡ENTRENA CONMIGO!</span>
                 </div>
             </article>
         </section>
@@ -94,12 +94,12 @@ function Intro() {
         <section className='bg-white text-center italic text-4xl font-extrabold'>
             <article className='items-center py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6'>
                 <div>
-                    <h1 className='text-black'> YO lo logré </h1>
+                    <h2 className='text-black'> YO lo logré </h2>
                     <h2 className='text-black'>ahora <span className='text-[#82027D]'>¡TE TOCA A VOS!</span> </h2>
                 </div>
                 <div className="grid grid-cols-2 justify-items-center gap-4 mt-16">
-                    <Image className="w-4/5 rounded-lg" src={nicoTransformacion_1} alt="office content 1"/>
-                    <Image className="w-4/5 rounded-lg" src={nicoTransformacion_2} alt="office content 2"/>
+                    <img className="w-4/5 rounded-lg" src={nicoTransformacion_1} alt="office content 1"/>
+                    <img className="w-4/5 rounded-lg" src={nicoTransformacion_2} alt="office content 2"/>
                 </div>
             </article>
         </section>

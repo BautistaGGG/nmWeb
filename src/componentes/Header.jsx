@@ -2,7 +2,7 @@ import React from "react";
 
 function Header() {
   return (
-    <section className="bg-center bg-cover bg-no-repeat bg-nicoPortada bg-blend-multiply">
+    <section className="bg-center bg-cover bg-no-repeat bg-nicoPortada bg-blend-multiply bg-gray-500">
       <div className="px-6 py-24 lg:py-56 mx-auto max-w-screen-xl text-center">
         <h1 className="italic mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
           ¡DESBLOQUEA TU MAS ALTO POTENCIAL!

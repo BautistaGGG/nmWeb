@@ -1,21 +1,21 @@
 import Navbar from "./componentes/Navbar";
 import Header from "./componentes/Header";
-// import Intro from "./componentes/Intro"
-// import Transformaciones from "./componentes/Transformaciones";
-// import Planes from "./componentes/Planes";
-// import Faq from "./componentes/Faq";
+import Intro from "./componentes/Intro"
+import Transformaciones from "./componentes/Transformaciones";
+import Planes from "./componentes/Planes";
+import Faq from "./componentes/Faq";
 // import Footer from "./componentes/Footer";
 
 function App() {
   return (
-    <main>
+    <main className="font-Inter">
       <Navbar/>
       <Header/>
-      {/*<Intro/>
+      <Intro/>
       <Transformaciones/>
       <Planes/>
       <Faq/>
-      <Footer/>*/}
+      {/* <Footer/> */}
     </main>
   )
 }

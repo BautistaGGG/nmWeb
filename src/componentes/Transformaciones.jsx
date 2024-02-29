@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 import transformacionHombre from "../assets/transform_1.3.png"
 import transformacionMujer from "../assets/transform_2.3.png"
@@ -27,39 +26,39 @@ function Transformaciones() {
           <div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
             {/* <!-- Contenedor 1 --> */}
             <div className="p-6 mx-auto max-w-lg xl:p-8">
-              <Image src={transformacionHombre} width="full" height="auto" className="w-full rounded-lg" alt="TransformacionMasculina"></Image>
+              <img src="../assets/transform_1.3.png" width="full" height="auto" className="w-full rounded-lg" alt="TransformacionMasculina"></img>
             </div>
             {/* <!-- Contenedor 2 --> */}
             <div className="p-6 mx-auto max-w-lg xl:p-8">
-            <Image src={transformacionMujer} width="full" height="auto" className="w-full rounded-lg" alt="TransformacionMasculina"></Image>
+            <img src="../assets/transform_2.3.png" width="full" height="auto" className="w-full rounded-lg" alt="TransformacionMasculina"></img>
             </div>
             {/* <!-- Contenedor 3 --> */}
             <div className="p-6 mx-auto max-w-lg xl:p-8">
-            <Image src={transformacionHombre} width="full" height="auto" className="w-full rounded-lg" alt="TransformacionMasculina"></Image>
+            <img src="../assets/transform_1.3.png" width="full" height="auto" className="w-full rounded-lg" alt="TransformacionMasculina"></img>
             </div>
             {/* <!-- Contenedor 4 --> */}
             <div className="p-6 mx-auto max-w-lg xl:p-8">
-             <Image src={transformacionMujer} width="full" height="auto" className="w-full rounded-lg" alt="TransformacionMasculina"></Image>
+             <img src="../assets/transform_2.3.png" width="full" height="auto" className="w-full rounded-lg" alt="TransformacionMasculina"></img>
             </div>
             {/* <!-- Contenedor 5 --> */}
             <div className="p-6 mx-auto max-w-lg xl:p-8">
-              <Image src={transformacionHombre} width="full" height="auto" className="w-full rounded-lg" alt="TransformacionMasculina"></Image>
+              <img src="../assets/transform_1.3.png" width="full" height="auto" className="w-full rounded-lg" alt="TransformacionMasculina"></img>
             </div>
             {/* <!-- Contenedor 6 --> */}
             <div className="p-6 mx-auto max-w-lg xl:p-8">
-             <Image src={transformacionMujer} width="full" height="auto" className="w-full rounded-lg" alt="TransformacionMasculina"></Image>
+             <img src="../assets/transform_2.3.png" width="full" height="auto" className="w-full rounded-lg" alt="TransformacionMasculina"></img>
             </div>
             {/* <!-- Contenedor 7 --> */}
             <div className="p-6 mx-auto max-w-lg xl:p-8">
-              <Image src={transformacionHombre} width="full" height="auto" className="w-full rounded-lg" alt="TransformacionMasculina"></Image>
+              <img src="../assets/transform_1.3.png" width="full" height="auto" className="w-full rounded-lg" alt="TransformacionMasculina"></img>
             </div>
             {/* <!-- Contenedor 8 --> */}
             <div className="p-6 mx-auto max-w-lg xl:p-8">
-              <Image src={transformacionMujer} width="full" height="auto" className="w-full rounded-lg" alt="TransformacionMasculina"></Image>
+              <img src="../assets/transform_2.3.png" width="full" height="auto" className="w-full rounded-lg" alt="TransformacionMasculina"></img>
             </div>
             {/* <!-- Contenedor 9 --> */}
             <div className="p-6 mx-auto max-w-lg xl:p-8">
-              <Image src={transformacionHombre} width="full" height="auto" className="w-full rounded-lg" alt="TransformacionMasculina"></Image>
+              <img src="../assets/transform_1.3.png" width="full" height="auto" className="w-full rounded-lg" alt="TransformacionMasculina"></img>
             </div>
           </div>
         </div>
