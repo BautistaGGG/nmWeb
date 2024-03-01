@@ -2,12 +2,7 @@ import nicoApp from "../assets/plan_app.png";
 
 export default function MuestraApp() {
   return (
-    <section
-      style={{
-        background:
-          "linear-gradient(to bottom, white 25%, black 0%, white 25%, white 47%, black 47%, black 0%)",
-      }}
-    >
+    <section style={{ background: "linear-gradient(to bottom, white 25%, black 0%, white 25%, white 47%, black 47%, black 0%)"}}>
       <h2 className="my-4 text-[2.8rem] text-center italic font-extrabold text-black dark:text-white">
         DESCARGA TU PLAN EN CUALQUIER DISPOSITIVO
       </h2>
@@ -207,7 +202,6 @@ export default function MuestraApp() {
           </div>
         </aside>
       </article>
-      ;
     </section>
   );
 }

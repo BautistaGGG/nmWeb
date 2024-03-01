@@ -22,15 +22,18 @@ export default module.exports = {
           "url('./src/assets/Nico_tarjeta_3.jpg')",
       },
       background:{
-        "blackWhite": "linear-gradient(to right, white 0%, white 50%, black 50%, black 100%)"
+        'blackWhite': "linear-gradient(to right, white 0%, white 50%, black 50%, black 100%)",
+        'rosaTarjetas': "#82027d6b"
       },
       colors:{
-        "violeta": "#82027D",
-        "gris": "#6B7280"
+        'violeta': "#82027D",
+        'gris': "#6B7280",
+        'rosaTarjetas': "#82027d6b"
       },
       textColor:{
-        "violeta": "#82027D",
-        "gris": "#6B7280"
+        'violeta': "#82027D",
+        'gris': "#6B7280",
+        'rosaTarjetas': "#82027d6b"
       },
       fontFamily:{
         'Inter': '"Inter", sans-serif'
