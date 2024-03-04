@@ -17,7 +17,19 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/*  */
+/* ESTILOS ACCORDION */
+/* border border-t-0 border-l-0 border-r-0 border-b-2 border-gris hover:bg-zinc-950 gap-3 */
+
+/* #panelFAQ{
+  border-bottom: 2px solid grey !important;
+  gap: 12px !important;
+}
+
+#panelFAQ:hover{
+  background-color: rgba(0, 0, 0, 0.507) !important;
+} */
+
+/* ESTILOS ACCORDION */
 
 /* body {
   margin: 0;
