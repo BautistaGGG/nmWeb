@@ -6,6 +6,7 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  scroll-behavior: smooth;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -18,18 +19,61 @@
 }
 
 /* ESTILOS ACCORDION */
-/* border border-t-0 border-l-0 border-r-0 border-b-2 border-gris hover:bg-zinc-950 gap-3 */
-
-/* #panelFAQ{
-  border-bottom: 2px solid grey !important;
-  gap: 12px !important;
+.divide-y > .flex{
+  background-color: #040404 !important;
 }
 
-#panelFAQ:hover{
-  background-color: rgba(0, 0, 0, 0.507) !important;
-} */
+.divide-y > .flex:hover{
+  background-color: #09090B !important;
+}
+.divide-y > .flex:focus{
+  background-color: #09090B !important;
+  box-shadow: none;
+}
+
+.divide-y > .flex path{
+  color: #82027d
+}
 
 /* ESTILOS ACCORDION */
+
+/* ESTILOS NAVBAR */
+nav > div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 24px;
+}
+
+nav div ul div button:hover{
+  color: #82027d;
+}
+
+nav div ul div button svg{
+  height: 24px;
+  width: 24px;
+}
+
+
+/* ESTILOS NAVBAR */
+
+
+/* ESTILOS PLANES */
+
+#planes .flex span, #planes h3{
+  text-shadow: 1px 2px 1px black;
+}
+
+#planes ul span{
+  text-shadow: 1px 2px 1px black;
+  font-size: 17px;
+}
+
+/* ESTILOS PLANES */
 
 /* body {
   margin: 0;
@@ -44,40 +88,14 @@ h1 {
   line-height: 1.1;
 }
 
-#walletBrick_container button{
-  /* background-color: green !important;
-  color: yellow !important; */
-}
-/* button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
 
-button:hover {
-  border-color: #646cff;
-}
+/* BUTTON MERCADO PAGO */
 
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-} */
+  #walletBrick_container button{
+    /* background-color: green !important;
+    color: yellow !important; */
+  }
+  
+/* BUTTON MERCADO PAGO */
 
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
+

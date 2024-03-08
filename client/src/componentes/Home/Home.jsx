@@ -5,7 +5,7 @@ import Transformaciones from "../Transformaciones";
 import MuestraApp from "../MuestraApp";
 import Planes from "../Planes";
 import Faq from "../Faq";
-// import Footer from "./Footer";
+// import Footer from "../Footer";
 
 export default function Home() {
   // Renderizando todos los componentes de la landing en un solo lugar.
@@ -18,6 +18,7 @@ export default function Home() {
       <MuestraApp />
       <Planes />
       <Faq />
+      {/* <Footer/> */}
     </div>
   );
 }

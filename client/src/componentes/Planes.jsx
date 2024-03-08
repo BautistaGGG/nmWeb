@@ -2,11 +2,15 @@ import { initMercadoPago, Wallet } from "@mercadopago/sdk-react";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { mercadoPagoKey } from "../../utils/mercadoKey";
+import { Button, Modal } from 'flowbite-react';
 
 function Planes() {
   const [paymentMp, setPaymentMp] = useState(null);
   const [price, setPrice] = useState(null);
   const [title, setTitle] = useState("");
+
+  // MODAL mercadoPago
+  const [openModal, setOpenModal] = useState(false);
 
   initMercadoPago(mercadoPagoKey, {
     locale: "es-AR",
@@ -52,8 +56,6 @@ function Planes() {
     setTitle(title)
   }
 
-
-
   return (
     <div>
       <div
@@ -72,9 +74,9 @@ function Planes() {
             <h3 className="mb-4 text-white text-3xl font-bold">
               VOLUMEN MUSCULAR
             </h3>
-            <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+            {/* <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
               Programa 100% personalizado
-            </p>
+            </p> */}
             <div className="flex justify-center items-baseline my-8">
               <span className="mr-2 text-white text-5xl font-extrabold">
                 $29
@@ -182,15 +184,36 @@ function Planes() {
             </ul>
 
             {/* Se dispara el pago  */}
-            <button
-              onClick={() => {
-               handlePayment(29)
-             }
-              }
-              className="bg-transparent hover:bg-[#82027D] transition-all text-white hover:text-slate-300 text-center text-lg font-medium px-5 py-2.5 border-2 border-[#82027D] focus:ring-4 focus:ring-primary-200 rounded-lg dark:text-white  dark:focus:ring-primary-900"
+            
+            <Button 
+              className="bg-[#82027D] hover:bg- transition-all text-white hover:text-slate-300 text-center text-lg font-medium mb-0 mx-auto mt-auto px-5 py-2.5 border-2 border-[#82027D] focus:ring-4 focus:ring-primary-200 rounded-lg dark:text-white  dark:focus:ring-primary-900"
+              onClick={ () => { setOpenModal(true), handlePayment(29)} }
             >
-             {price ? "COMENCEMOS!" : "¿LISTO PARA EL CAMBIO?" }
-            </button>
+              {price === 29 ? "COMENCEMOS!" : "¿LISTO PARA EL CAMBIO?" }
+            </Button>
+
+              <Modal dismissible show={openModal} onClose={() => setOpenModal(false)}>
+                <Modal.Header>Terms of Service</Modal.Header>
+                <Modal.Body>
+                  <div className="space-y-6">
+                    <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                      With less than a month to go before the European Union enacts new consumer privacy laws for its citizens,
+                      companies around the world are updating their terms of service agreements to comply.
+                    </p>
+                    <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                      The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant
+                      to ensure a common set of data rights in the European Union. It requires organizations to notify users as
+                      soon as possible of high-risk data breaches that could personally affect them.
+                    </p>
+                  </div>
+                </Modal.Body>
+
+                <Modal.Footer>
+                  <Button color="gray" onClick={() => setOpenModal(false)}>
+                    Cerrar
+                  </Button>
+                </Modal.Footer>
+              </Modal>
 
             {/* Toma el id y crea el boton de pago  */}
           </div>
@@ -200,9 +223,9 @@ function Planes() {
             <h3 className="mb-4 text-white text-3xl font-bold">
               ELIMINACIÓN DE GRASA Y TONIFICACIÓN
             </h3>
-            <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+            {/* <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
               Programa 100% personalizado
-            </p>
+            </p> */}
             <div className="flex justify-center items-baseline my-8">
               <span className="text-white mr-2 text-5xl font-extrabold">
                 $99
@@ -345,9 +368,9 @@ function Planes() {
               handlePayment(99)
               handleTitle("Masa muscular")}
             }
-              className="bg-transparent hover:bg-[#82027D] transition-all text-white hover:text-slate-300 text-center text-lg font-medium px-5 py-2.5 border-2 border-[#82027D] focus:ring-4 focus:ring-primary-200 rounded-lg dark:text-white  dark:focus:ring-primary-900"
+              className="bg-transparent hover:bg-[#82027D] transition-all text-white hover:text-slate-300 text-center text-lg font-medium mb-0 mx-auto mt-auto px-5 py-2.5 border-2 border-[#82027D] focus:ring-4 focus:ring-primary-200 rounded-lg dark:text-white  dark:focus:ring-primary-900"
             >
-              COMENZAR
+              {price === 99 ? "COMENCEMOS!" : "¿LISTO PARA EL CAMBIO?" }
             </button>
           </div>
 
@@ -356,9 +379,9 @@ function Planes() {
             <h3 className="mb-4 text-white text-2xl font-bold">
               COACHING 1 A 1
             </h3>
-            <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+            {/* <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
               Programa 100% personalizado
-            </p>
+            </p> */}
             <div className="flex justify-center items-baseline my-8">
               <span className="mr-2 text-white text-5xl font-extrabold">
                 $499
@@ -432,15 +455,14 @@ function Planes() {
               </li>
             </ul>
             <button
-             
-              className="bg-transparent hover:bg-[#82027D] transition-all text-white hover:text-slate-300 text-center text-lg font-medium px-5 py-2.5 border-2 border-[#82027D] focus:ring-4 focus:ring-primary-200 rounded-lg dark:text-white  dark:focus:ring-primary-900"
+              className="bg-transparent hover:bg-[#82027D] transition-all text-white hover:text-slate-300 text-center text-lg font-medium mb-0 mx-auto mt-auto px-5 py-2.5 border-2 border-[#82027D] focus:ring-4 focus:ring-primary-200 rounded-lg dark:text-white  dark:focus:ring-primary-900"
             >
-              COMENZAR
+              {price === 499 ? "COMENCEMOS!" : "¿LISTO PARA EL CAMBIO?" }
             </button>
           </div>
         </div>
       </div>
-      <article>
+      <article className="flex justify-center">
         {paymentMp && <Wallet initialization={{ preferenceId: paymentMp }} />}
       </article>
     </div>

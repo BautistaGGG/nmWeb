@@ -35,7 +35,7 @@ function Footer() {
                     </svg>
                   </div>
                   <input
-                    class="block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                    class="block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg sm:rounded-none sm:rounded-l-lg focus:ring-[#82027D] focus:border-[#82027D]"
                     placeholder="Ingresa tu correo electrónico"
                     type="email"
                     id="email"
@@ -45,7 +45,7 @@ function Footer() {
                 <div>
                   <button
                     type="submit"
-                    class="bg-[#82027D] py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg border border-[#82027D] cursor-pointer bg-primary-700 sm:rounded-none sm:rounded-r-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                    class="bg-[#82027D] hover:bg-[#040404] py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg border border-[#82027D] cursor-pointer bg-primary-700 sm:rounded-none sm:rounded-r-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
                   >
                     Suscribirse
                   </button>
@@ -56,11 +56,11 @@ function Footer() {
         </div>
       </section>
 
-      <footer className="bg-[#040404]  shadow sm:flex sm:items-center sm:justify-between p-4 sm:p-6 xl:p-8 dark:bg-gray-00 antialiased">
-        <p className="mb-4 text-sm text-center text-gray-500 dark:text-gray-400 sm:mb-0">
+      <footer className="bg-gradient-to-t from-[#82027D] to-[#040404]  shadow sm:flex sm:items-center sm:justify-between p-4 sm:p-6 xl:p-8 dark:bg-gray-00 antialiased">
+        <p className="mb-4 text-sm text-center text-white dark:text-gray-400 sm:mb-0">
           &copy; 2024 Nicolas Marban
         </p>
-        <p className=" mb-4 text-sm   text-gray-500 sm:mb-0 mr-12 ">
+        <p className=" mb-4 text-sm text-white sm:mb-0 mr-12 ">
           Creada por Lautaro Gayoso - Bautista Gonzalez
         </p>
 
@@ -68,7 +68,7 @@ function Footer() {
           <a
             href="#"
             data-tooltip-target="tooltip-facebook"
-            className="inline-flex justify-center p-2 text-gray-500 rounded-lg cursor-pointer dark:text-gray-400 dark:hover:text-white hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-600"
+            className="inline-flex justify-center p-2text-white rounded-lg cursor-pointer dark:text-gray-400 dark:hover:text-white hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-600"
           >
             <svg
               className="w-4 h-4"
@@ -96,7 +96,7 @@ function Footer() {
           <a
             href="#"
             data-tooltip-target="tooltip-twitter"
-            class="inline-flex justify-center p-2 text-gray-500 rounded-lg cursor-pointer dark:text-gray-400 dark:hover:text-white hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-600"
+            class="inline-flex justify-center p-2 text-white rounded-lg cursor-pointer dark:text-gray-400 dark:hover:text-white hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-600"
           >
             <svg
               class="w-4 h-4"
@@ -123,7 +123,7 @@ function Footer() {
           <a
             href="#"
             data-tooltip-target="tooltip-github"
-            class="inline-flex justify-center p-2 text-gray-500 rounded-lg cursor-pointer dark:text-gray-400 dark:hover:text-white hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-600"
+            class="inline-flex justify-center p-2 text-white rounded-lg cursor-pointer dark:text-gray-400 dark:hover:text-white hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-600"
           >
             <svg
               class="w-4 h-4"
@@ -151,7 +151,7 @@ function Footer() {
           <a
             href="#"
             data-tooltip-target="tooltip-dribbble"
-            class="inline-flex justify-center p-2 text-gray-500 rounded-lg cursor-pointer dark:text-gray-400 dark:hover:text-white hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-600"
+            class="inline-flex justify-center p-2 text-white rounded-lg cursor-pointer dark:text-gray-400 dark:hover:text-white hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-600"
           >
             <svg
               class="w-4 h-4"

@@ -126,12 +126,12 @@ function Intro() {
           </div>
           <div className="grid grid-cols-2 justify-items-center gap-4 mt-16">
             <img
-              className="w-4/5 rounded-lg"
+              className="w-4/5 rounded-lg border-2 border-black"
               src={nicoTransformacion_1}
               alt="office content 1"
             />
             <img
-              className="w-4/5 rounded-lg"
+              className="w-4/5 rounded-lg border-2 border-black"
               src={nicoTransformacion_2}
               alt="office content 2"
             />
