@@ -186,25 +186,17 @@ function Planes() {
             {/* Se dispara el pago  */}
             
             <Button 
-              className="bg-[#82027D] hover:bg- transition-all text-white hover:text-slate-300 text-center text-lg font-medium mb-0 mx-auto mt-auto px-5 py-2.5 border-2 border-[#82027D] focus:ring-4 focus:ring-primary-200 rounded-lg dark:text-white  dark:focus:ring-primary-900"
-              onClick={ () => { setOpenModal(true), handlePayment(29)} }
+              className="bg-[#82027D] hover:bg-[#82027da6] transition-all text-white hover:text-slate-300 text-center text-lg font-medium mb-0 mx-auto mt-auto px-5 py-2.5 border-2 border-[#82027D] focus:ring-4 focus:ring-primary-200 rounded-lg dark:text-white  dark:focus:ring-primary-900"
+              onClick={ () => { price === 29 && setOpenModal(true), handlePayment(29)} }
             >
-              {price === 29 ? "COMENCEMOS!" : "¿LISTO PARA EL CAMBIO?" }
+              {price === 29 ? "COMENCEMOS!" : "¿LISTO PARA EL CAMBIO?"}
             </Button>
 
               <Modal dismissible show={openModal} onClose={() => setOpenModal(false)}>
-                <Modal.Header>Terms of Service</Modal.Header>
+                <Modal.Header>¿LISTO PARA EL CAMBIO?</Modal.Header>
                 <Modal.Body>
                   <div className="space-y-6">
-                    <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                      With less than a month to go before the European Union enacts new consumer privacy laws for its citizens,
-                      companies around the world are updating their terms of service agreements to comply.
-                    </p>
-                    <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                      The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant
-                      to ensure a common set of data rights in the European Union. It requires organizations to notify users as
-                      soon as possible of high-risk data breaches that could personally affect them.
-                    </p>
+                  {paymentMp && <Wallet initialization={{ preferenceId: paymentMp }} />}
                   </div>
                 </Modal.Body>
 
@@ -462,9 +454,6 @@ function Planes() {
           </div>
         </div>
       </div>
-      <article className="flex justify-center">
-        {paymentMp && <Wallet initialization={{ preferenceId: paymentMp }} />}
-      </article>
     </div>
   );
 }
