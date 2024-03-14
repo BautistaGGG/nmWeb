@@ -4,7 +4,7 @@ export default function Faq() {
   return (
     <section className="bg-[#040404]">
       <div className="flex flex-col py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-        <h2 className="mb-8 p-4 text-white text-4xl text-center self-center font-extrabold border-2 border-violeta rounded-lg">
+        <h2 className="mb-8 p-4 text-white text-[1.2rem] lg:text-4xl text-center self-center font-extrabold border-2 border-violeta rounded-lg">
           PREGUNTAS FRECUENTES
         </h2>
         {/* CONTENEDOR PREGUNTAS Y RESPUESTAS */}
