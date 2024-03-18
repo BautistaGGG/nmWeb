@@ -2,11 +2,11 @@ import nicoApp from "../assets/plan_app.png";
 
 export default function MuestraApp() {
   return (
-    <section style={{ background: "linear-gradient(to bottom, white 25%, black 0%, white 25%, white 47%, black 47%, black 0%)"}}>
-      <h2 className="my-4 text-[2.8rem] text-center italic font-extrabold text-black dark:text-white">
+    <section style={{background: "linear-gradient(to bottom, white 25%, black 0%, white 25%, white 47%, black 47%, black 0%)"}}>
+      <h2 className="my-4 text-3xl xl:text-[2.8rem] text-center italic font-extrabold text-black dark:text-white">
         DESCARGA TU PLAN EN CUALQUIER DISPOSITIVO
       </h2>
-      <article className="flex justify-center gap-6 py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+      <article className="flex flex-col lg:flex-row justify-center gap-6 py-8 px-4 lg:py-16 lg:px-6 mx-auto max-w-screen-xl ">
         <aside className="grid content-between">
           <div className="grid gap-4">
             <svg

@@ -27,7 +27,7 @@ function Intro() {
               Nuevo <span className="italic"> FISICO </span>{" "}
               <span className="text-[#82027D] ml-1"> = </span>
             </h2>
-            <h2 className="mb-4 italic text-4xl tracking-tight font-extrabold text-[#82027D] dark:text-white">
+            <h2 className="mb-4 italic text-2xl xl:text-4xl tracking-tight font-extrabold text-[#82027D] dark:text-white">
               TRANSFORMACIÓN
             </h2>
             <p className="mb-4">

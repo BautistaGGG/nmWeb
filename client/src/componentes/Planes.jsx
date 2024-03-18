@@ -62,14 +62,14 @@ function Planes() {
         className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6"
       >
         <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-          <h2 className="my-8 py-4 text-[2.8rem] italic font-extrabold text-black dark:text-white">
+          <h2 className="my-8 py-4 text-3xl lg:text-[2.8rem] italic font-extrabold text-black dark:text-white">
             PLANES, OPCIONES Y BENEFICIOS
           </h2>
         </div>
 
-        <div className="lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10">
+        <div className="grid grid-cols-1 xl:grid xl:grid-cols-3 gap-8 xl:gap-10">
           {/* <!-- Pricing Card --> */}
-          <div className="bg-center bg-cover bg-no-repeat bg-planesUno bg-blend-multiply bg-rosaTarjetas mt-12 w-[384px] flex flex-col p-6 mx-auto max-w-lg text-center rounded-lg border-2 border-black shadow-xl shadow-[#2d2d2d]">
+          <div className="bg-center bg-cover bg-no-repeat bg-planesUno bg-blend-multiply bg-rosaTarjetas mt-0 xl:mt-12 w-full md:w-[384px] flex flex-col p-6 mx-auto max-w-lg text-center rounded-lg border-2 border-black shadow-xl shadow-[#2d2d2d]">
             <h3 className="mb-4 text-white text-3xl font-bold">
               VOLUMEN MUSCULAR
             </h3>
@@ -182,40 +182,21 @@ function Planes() {
             </ul>
 
             {/* Se dispara el pago  */}
-
-            <Button
-              className="bg-[#82027D] hover:bg- transition-all text-white hover:text-slate-300 text-center text-lg font-medium mb-0 mx-auto mt-auto px-5 py-2.5 border-2 border-[#82027D] focus:ring-4 focus:ring-primary-200 rounded-lg dark:text-white  dark:focus:ring-primary-900"
-              onClick={() => {
-                setOpenModal(true), handlePayment(29);
-              }}
+            
+            <button 
+              className="bg-[#82027D] hover:bg-[#82027da6] transition-all text-white hover:text-slate-300 text-center text-lg font-medium mb-0 mx-auto mt-auto px-5 py-2.5 border-2 border-[#82027D] focus:ring-4 focus:ring-primary-200 rounded-lg dark:text-white  dark:focus:ring-primary-900"
+              onClick={ () => { price === 29 && setOpenModal(true), handlePayment(29), handleTitle("Masa muscular")} }
             >
               {price === 29 ? "COMENCEMOS!" : "¿LISTO PARA EL CAMBIO?"}
-            </Button>
+            </button>
 
-            <Modal
-              dismissible
-              show={openModal}
-              onClose={() => setOpenModal(false)}
-            >
-              <Modal.Header>Terms of Service</Modal.Header>
-              <Modal.Body>
-                <div className="space-y-6">
-                  <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                    With less than a month to go before the European Union
-                    enacts new consumer privacy laws for its citizens, companies
-                    around the world are updating their terms of service
-                    agreements to comply.
-                  </p>
-                  <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                    The European Union’s General Data Protection Regulation
-                    (G.D.P.R.) goes into effect on May 25 and is meant to ensure
-                    a common set of data rights in the European Union. It
-                    requires organizations to notify users as soon as possible
-                    of high-risk data breaches that could personally affect
-                    them.
-                  </p>
-                </div>
-              </Modal.Body>
+              <Modal dismissible show={openModal} onClose={() => setOpenModal(false)}>
+                <Modal.Header>PLAN: {title}</Modal.Header>
+                <Modal.Body>
+                  <div className="space-y-6">
+                  {paymentMp && <Wallet initialization={{ preferenceId: paymentMp }} />}
+                  </div>
+                </Modal.Body>
 
               <Modal.Footer>
                 <Button color="gray" onClick={() => setOpenModal(false)}>
@@ -228,7 +209,7 @@ function Planes() {
           </div>
 
           {/* <!-- Pricing Card --> */}
-          <div className="bg-center bg-cover bg-no-repeat bg-planesDos w-[384px] flex flex-col p-6 mx-auto max-w-lg text-center rounded-lg border-2 border-black shadow-xl shadow-[#2d2d2d]">
+          <div className="bg-center bg-cover bg-no-repeat bg-planesDos w-full md:w-[384px] flex flex-col p-6 mx-auto max-w-lg text-center rounded-lg border-2 border-black shadow-xl shadow-[#2d2d2d]">
             <h3 className="mb-4 text-white text-3xl font-bold">
               ELIMINACIÓN DE GRASA Y TONIFICACIÓN
             </h3>
@@ -372,18 +353,15 @@ function Planes() {
               </li>
             </ul>
             <button
-              onClick={() => {
-                handlePayment(99);
-                handleTitle("Masa muscular");
-              }}
-              className="bg-transparent hover:bg-[#82027D] transition-all text-white hover:text-slate-300 text-center text-lg font-medium mb-0 mx-auto mt-auto px-5 py-2.5 border-2 border-[#82027D] focus:ring-4 focus:ring-primary-200 rounded-lg dark:text-white  dark:focus:ring-primary-900"
+              className="bg-[#82027D] hover:bg-[#82027da6] transition-all text-white hover:text-slate-300 text-center text-lg font-medium mb-0 mx-auto mt-auto px-5 py-2.5 border-2 border-[#82027D] focus:ring-4 focus:ring-primary-200 rounded-lg dark:text-white  dark:focus:ring-primary-900"
+              onClick={ () => { price === 99 && setOpenModal(true), handlePayment(99), handleTitle("Eliminación de grasa y tonificación")} }
             >
               {price === 99 ? "COMENCEMOS!" : "¿LISTO PARA EL CAMBIO?"}
             </button>
           </div>
 
           {/* <!-- Pricing Card --> */}
-          <div className="bg-center bg-cover bg-no-repeat bg-planesTres bg-blend-multiply bg-rosaTarjetas mt-12 w-[384px] flex flex-col p-6 mx-auto max-w-lg text-center rounded-lg border-2 border-black shadow-xl shadow-[#2d2d2d]">
+          <div className="bg-center bg-cover bg-no-repeat bg-planesTres bg-blend-multiply bg-rosaTarjetas mt-0 xl:mt-12 w-full md:w-[384px] flex flex-col p-6 mx-auto max-w-lg text-center rounded-lg border-2 border-black shadow-xl shadow-[#2d2d2d]">
             <h3 className="mb-4 text-white text-2xl font-bold">
               COACHING 1 A 1
             </h3>
@@ -462,15 +440,15 @@ function Planes() {
                 <span>Seguimiento a través de WhatsApp 24/7</span>
               </li>
             </ul>
-            <button className="bg-transparent hover:bg-[#82027D] transition-all text-white hover:text-slate-300 text-center text-lg font-medium mb-0 mx-auto mt-auto px-5 py-2.5 border-2 border-[#82027D] focus:ring-4 focus:ring-primary-200 rounded-lg dark:text-white  dark:focus:ring-primary-900">
-              {price === 499 ? "COMENCEMOS!" : "¿LISTO PARA EL CAMBIO?"}
+            <button
+              className="bg-[#82027D] hover:bg-[#82027da6] transition-all text-white hover:text-slate-300 text-center text-lg font-medium mb-0 mx-auto mt-auto px-5 py-2.5 border-2 border-[#82027D] focus:ring-4 focus:ring-primary-200 rounded-lg dark:text-white  dark:focus:ring-primary-900"
+              onClick={ () => { price === 499 && setOpenModal(true), handlePayment(499), handleTitle("Coaching 1 a 1")} }
+            >
+              {price === 499 ? "COMENCEMOS!" : "¿LISTO PARA EL CAMBIO?" }
             </button>
           </div>
         </div>
       </div>
-      <article className="flex justify-center">
-        {paymentMp && <Wallet initialization={{ preferenceId: paymentMp }} />}
-      </article>
     </div>
   );
 }
