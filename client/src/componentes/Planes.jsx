@@ -2,7 +2,7 @@ import { initMercadoPago, Wallet } from "@mercadopago/sdk-react";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { mercadoPagoKey } from "../../utils/mercadoKey";
-import { Button, Modal } from 'flowbite-react';
+import { Button, Modal } from "flowbite-react";
 
 function Planes() {
   const [paymentMp, setPaymentMp] = useState(null);
@@ -18,9 +18,9 @@ function Planes() {
 
   useEffect(() => {
     console.log(title, price);
-  },[price])
+  }, [price]);
 
-   const payment = async () => {
+  const payment = async () => {
     try {
       // mandamos los datos de la card al back
       const response = await axios.post(
@@ -39,22 +39,21 @@ function Planes() {
     }
   };
 
-    // funcion que inicia la ejecucion
-    const handlePayment = async (number) => {
-      setPrice(number)
-      const id = await payment(); // guardamos el id que nos devuelve el backend
-      if (id) {
-        setPaymentMp(id);
-        // Seteamos el id en el hook use state
-      } else {
-        console.log("error");
-      }
-
+  // funcion que inicia la ejecucion
+  const handlePayment = async (number) => {
+    setPrice(number);
+    const id = await payment(); // guardamos el id que nos devuelve el backend
+    if (id) {
+      setPaymentMp(id);
+      // Seteamos el id en el hook use state
+    } else {
+      console.log("error");
+    }
   };
 
   const handleTitle = async (title) => {
-    setTitle(title)
-  }
+    setTitle(title);
+  };
 
   return (
     <div>
@@ -84,7 +83,6 @@ function Planes() {
             </div>
             {/* <!-- List --> */}
             <ul role="list" className="mb-8 space-y-4 text-left text-white">
-
               <li className="flex items-center space-x-3">
                 {/* <!-- Icon --> */}
                 <svg
@@ -184,36 +182,47 @@ function Planes() {
             </ul>
 
             {/* Se dispara el pago  */}
-            
-            <Button 
+
+            <Button
               className="bg-[#82027D] hover:bg- transition-all text-white hover:text-slate-300 text-center text-lg font-medium mb-0 mx-auto mt-auto px-5 py-2.5 border-2 border-[#82027D] focus:ring-4 focus:ring-primary-200 rounded-lg dark:text-white  dark:focus:ring-primary-900"
-              onClick={ () => { setOpenModal(true), handlePayment(29)} }
+              onClick={() => {
+                setOpenModal(true), handlePayment(29);
+              }}
             >
-              {price === 29 ? "COMENCEMOS!" : "¿LISTO PARA EL CAMBIO?" }
+              {price === 29 ? "COMENCEMOS!" : "¿LISTO PARA EL CAMBIO?"}
             </Button>
 
-              <Modal dismissible show={openModal} onClose={() => setOpenModal(false)}>
-                <Modal.Header>Terms of Service</Modal.Header>
-                <Modal.Body>
-                  <div className="space-y-6">
-                    <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                      With less than a month to go before the European Union enacts new consumer privacy laws for its citizens,
-                      companies around the world are updating their terms of service agreements to comply.
-                    </p>
-                    <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                      The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant
-                      to ensure a common set of data rights in the European Union. It requires organizations to notify users as
-                      soon as possible of high-risk data breaches that could personally affect them.
-                    </p>
-                  </div>
-                </Modal.Body>
+            <Modal
+              dismissible
+              show={openModal}
+              onClose={() => setOpenModal(false)}
+            >
+              <Modal.Header>Terms of Service</Modal.Header>
+              <Modal.Body>
+                <div className="space-y-6">
+                  <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                    With less than a month to go before the European Union
+                    enacts new consumer privacy laws for its citizens, companies
+                    around the world are updating their terms of service
+                    agreements to comply.
+                  </p>
+                  <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                    The European Union’s General Data Protection Regulation
+                    (G.D.P.R.) goes into effect on May 25 and is meant to ensure
+                    a common set of data rights in the European Union. It
+                    requires organizations to notify users as soon as possible
+                    of high-risk data breaches that could personally affect
+                    them.
+                  </p>
+                </div>
+              </Modal.Body>
 
-                <Modal.Footer>
-                  <Button color="gray" onClick={() => setOpenModal(false)}>
-                    Cerrar
-                  </Button>
-                </Modal.Footer>
-              </Modal>
+              <Modal.Footer>
+                <Button color="gray" onClick={() => setOpenModal(false)}>
+                  Cerrar
+                </Button>
+              </Modal.Footer>
+            </Modal>
 
             {/* Toma el id y crea el boton de pago  */}
           </div>
@@ -230,7 +239,6 @@ function Planes() {
               <span className="text-white mr-2 text-5xl font-extrabold">
                 $99
               </span>
-
             </div>
             {/* <!-- List --> */}
             <ul role="list" className="mb-8 space-y-4 text-left text-white">
@@ -364,13 +372,13 @@ function Planes() {
               </li>
             </ul>
             <button
-            onClick={() => {
-              handlePayment(99)
-              handleTitle("Masa muscular")}
-            }
+              onClick={() => {
+                handlePayment(99);
+                handleTitle("Masa muscular");
+              }}
               className="bg-transparent hover:bg-[#82027D] transition-all text-white hover:text-slate-300 text-center text-lg font-medium mb-0 mx-auto mt-auto px-5 py-2.5 border-2 border-[#82027D] focus:ring-4 focus:ring-primary-200 rounded-lg dark:text-white  dark:focus:ring-primary-900"
             >
-              {price === 99 ? "COMENCEMOS!" : "¿LISTO PARA EL CAMBIO?" }
+              {price === 99 ? "COMENCEMOS!" : "¿LISTO PARA EL CAMBIO?"}
             </button>
           </div>
 
@@ -454,10 +462,8 @@ function Planes() {
                 <span>Seguimiento a través de WhatsApp 24/7</span>
               </li>
             </ul>
-            <button
-              className="bg-transparent hover:bg-[#82027D] transition-all text-white hover:text-slate-300 text-center text-lg font-medium mb-0 mx-auto mt-auto px-5 py-2.5 border-2 border-[#82027D] focus:ring-4 focus:ring-primary-200 rounded-lg dark:text-white  dark:focus:ring-primary-900"
-            >
-              {price === 499 ? "COMENCEMOS!" : "¿LISTO PARA EL CAMBIO?" }
+            <button className="bg-transparent hover:bg-[#82027D] transition-all text-white hover:text-slate-300 text-center text-lg font-medium mb-0 mx-auto mt-auto px-5 py-2.5 border-2 border-[#82027D] focus:ring-4 focus:ring-primary-200 rounded-lg dark:text-white  dark:focus:ring-primary-900">
+              {price === 499 ? "COMENCEMOS!" : "¿LISTO PARA EL CAMBIO?"}
             </button>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import Home from "./componentes/Home/Home";
+/* import { Route, Routes, BrowserRouter } from "react-router-dom"; */
 
 function App() {
   // Only rutas aca
