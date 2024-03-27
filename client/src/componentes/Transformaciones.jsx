@@ -11,7 +11,7 @@ function Transformaciones() {
             <h2 className="mb-16 text-2xl xl:text-[2rem] lg:text-5xl tracking-tight font-extrabold text-white dark:text-white">
               TRANSFORMACIONES
             </h2>
-            <p className="bg-[#0000006e] mb-4 p-4 text-2xl font-bold text-white border-2 border-[#82027D]  dark:text-black">
+            <p className="bg-[#0000006e] mb-4 p-4 text-xl lg:text-2xl font-bold text-white border-2 border-[#82027D]  dark:text-black">
               Los CAMBIOS no se dan de la noche a la mañana.
               <br />
               Para <span className="text-[#82027D]">VER RESULTADOS</span>, es

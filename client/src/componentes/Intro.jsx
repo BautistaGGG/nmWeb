@@ -15,19 +15,19 @@ function Intro() {
       <section className="bg-[#040404] dark:bg-gray-900" id="info">
         <article className="gap-16 items-start py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
           <aside className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-            <h2 className="text-[1.65rem] lg:text-4xl m-0 lg:mb-4  tracking-tight font-extrabold text-white dark:text-white">
-              Nuevos <span className="italic"> HABITOS </span>{" "}
-              <span className="text-[#82027D] ml-1"> + </span>
+            <h2 className="text-center lg:text-left text-[1.65rem] lg:text-4xl m-0 lg:mb-4  tracking-tight font-extrabold text-white dark:text-white">
+              Nuevos <span className="text-center lg:text-right italic"> HABITOS </span>{" "}
+              <span className="block lg:inline text-[#82027D] ml-1"> + </span>
             </h2>
-            <h2 className="text-[1.65rem] lg:text-4xl m-0 lg:mb-4  tracking-tight font-extrabold text-white dark:text-white">
-              Nueva <span className="italic"> MENTALIDAD </span>{" "}
-              <span className="text-[#82027D] ml-1"> + </span>
+            <h2 className="text-center lg:text-left text-[1.65rem] lg:text-4xl m-0 lg:mb-4  tracking-tight font-extrabold text-white dark:text-white">
+              Nueva <span className="text-center lg:text-right italic"> MENTALIDAD </span>{" "}
+              <span className="block lg:inline text-[#82027D] ml-1"> + </span>
             </h2>
-            <h2 className="text-[1.65rem] lg:text-4xl m-0 lg:mb-4  tracking-tight font-extrabold text-white dark:text-white">
-              Nuevo <span className="italic"> FISICO </span>{" "}
-              <span className="text-[#82027D] ml-1"> = </span>
+            <h2 className="text-center lg:text-left text-[1.65rem] lg:text-4xl m-0 lg:mb-4  tracking-tight font-extrabold text-white dark:text-white">
+              Nuevo <span className="text-center lg:text-right italic"> FISICO </span>{" "}
+              <span className="block lg:inline text-[#82027D] ml-1"> = </span>
             </h2>
-            <h2 className="mb-4 italic text-2xl xl:text-4xl tracking-tight font-extrabold text-[#82027D] dark:text-white">
+            <h2 className="mb-4 text-center lg:text-left italic text-2xl xl:text-4xl tracking-tight font-extrabold text-[#82027D] dark:text-white">
               TRANSFORMACIÓN
             </h2>
             <p className="mb-4">
@@ -119,9 +119,9 @@ function Intro() {
       <section className="bg-white text-center italic text-4xl font-extrabold">
         <article className="items-center py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
           <div>
-            <h2 className="text-black"> YO lo logré </h2>
-            <h2 className="text-black">
-              ahora <span className="text-[#82027D]">¡TE TOCA A VOS!</span>{" "}
+            <h2 className="text-black text-3xl"> YO lo logré </h2>
+            <h2 className="text-black text-3xl">
+              ahora <br className="lg:hidden"/> <span className="text-[#82027D] text-3xl">¡TE TOCA A VOS!</span>{" "}
             </h2>
           </div>
           <div className="grid grid-cols-2 justify-items-center gap-4 mt-16">

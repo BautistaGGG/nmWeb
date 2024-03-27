@@ -15,7 +15,7 @@ export default function Faq() {
               ¿Cómo recibo mi programa?
             </Accordion.Title>
             <Accordion.Content>
-              <p className="mb-2 text-gris">
+              <p className="mb-2 text-gris text-sm lg:text-base">
                 Todos nuestros planes tienen un coste mensual, asi como tambien
                 descuentos por adquirir varios meses juntos.
               </p>
@@ -28,7 +28,7 @@ export default function Faq() {
               ¿Los planes se pagan mensualmente o es una única compra?
             </Accordion.Title>
             <Accordion.Content>
-              <p className="mb-2 text-gris">
+              <p className="mb-2 text-gris text-sm lg:text-base">
                 Todos nuestros planes tienen un coste mensual, asi como tambien
                 descuentos por adquirir varios meses juntos.
               </p>
@@ -41,7 +41,7 @@ export default function Faq() {
               ¿Puedo hacer el plan en casa?     
             </Accordion.Title>
             <Accordion.Content>
-              <p className="mb-2 text-gris">
+              <p className="mb-2 text-gris text-sm lg:text-base">
                 Por supuesto que podes hacer el plan de entrenamiento en tu hogar
                 o en espacios abiertos. Es necesario saber con que material contas
                 para asi adaptar la rutina a tus necesidades asegurandonos de que
@@ -56,7 +56,7 @@ export default function Faq() {
             ¿Todos los meses son iguales?
             </Accordion.Title>
             <Accordion.Content>
-              <p className="mb-2 text-gris">
+              <p className="mb-2 text-gris text-sm lg:text-base">
                 Todos nuestros planes tienen un coste mensual, asi como tambien
                 descuentos por adquirir varios meses juntos.
               </p>
@@ -69,7 +69,7 @@ export default function Faq() {
             Soy nuevo en el gimnasio, ¿es bueno para principiantes?
             </Accordion.Title>
             <Accordion.Content>
-              <p className="mb-2 text-gris">
+              <p className="mb-2 text-gris text-sm lg:text-base">
                 Todos nuestros planes tienen un coste mensual, asi como tambien
                 descuentos por adquirir varios meses juntos.
               </p>
@@ -82,7 +82,7 @@ export default function Faq() {
             Reembolsos y devoluciones    
             </Accordion.Title>
             <Accordion.Content>
-              <p className="mb-2 text-gris">
+              <p className="mb-2 text-gris text-sm lg:text-base">
                 Por supuesto que podes hacer el plan de entrenamiento en tu hogar
                 o en espacios abiertos. Es necesario saber con que material contas
                 para asi adaptar la rutina a tus necesidades asegurandonos de que

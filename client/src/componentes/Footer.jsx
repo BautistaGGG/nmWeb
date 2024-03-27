@@ -8,7 +8,7 @@ function Footer() {
       <section className="bg-[#040404] dark:bg-gray-900" id="newsletter">
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
           <div className="mx-auto max-w-screen-md sm:text-center">
-            <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-white sm:text-4xl dark:text-white">
+            <h2 className="mb-4 text-3xl text-center lg:text-left tracking-tight font-extrabold text-white sm:text-4xl dark:text-white">
               Suscríbete a nuestro newsletter
             </h2>
             <p className="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-x1 dark:text-gray-400">
