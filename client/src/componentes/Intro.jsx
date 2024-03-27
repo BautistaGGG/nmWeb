@@ -42,7 +42,7 @@ function Intro() {
 
           <div className="grid grid-cols-2 gap-4">
             <img
-              className="w-full rounded-lg"
+              className="lg:m-0 w-full rounded-lg"
               src={nicoIntro_1}
               alt="office content 1"
             />
@@ -74,7 +74,7 @@ function Intro() {
       <section className="bg-[#040404] dark:bg-gray-900" id="info">
         <article className="items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:items-start lg:py-16 lg:px-6">
           <img
-            className="w-4/5 rounded-lg"
+            className="w-4/5 my-4 mx-auto lg:m-0 rounded-lg"
             src={nicoHistoria}
             alt="office content 1"
           />
