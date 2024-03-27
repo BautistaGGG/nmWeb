@@ -46,7 +46,7 @@ nav > div{
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
-  padding: 24px;
+  padding: 16px;
 }
 
 nav div ul div button:hover{
@@ -56,6 +56,14 @@ nav div ul div button:hover{
 nav div ul div button svg{
   height: 24px;
   width: 24px;
+}
+
+nav > .flex > button:hover{
+  background-color: #040404;
+}
+
+nav > .flex >button:focus{
+  box-shadow: none;
 }
 
 

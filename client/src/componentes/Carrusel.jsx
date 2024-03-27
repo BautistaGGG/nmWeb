@@ -23,19 +23,19 @@ export default function Carrusel() {
             <img
               src={logoNico}
               alt="nicolásMarban Logo"
-              className="px-4 h-32 w-auto"
+              className="px-4 h-8 lg:h-32 w-auto"
             />
           </div>
           <div className="bg-white"></div>
         </aside>
         <article className="items-center py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
           <div>
-            <h2 className="text-white">
+            <h2 className="text-white text-2xl">
               {" "}
               TRANSFORMA TUS{" "}
               <span className="text-[#82027D]">ENTRENAMIENTOS</span>{" "}
             </h2>
-            <h2 className="text-white">
+            <h2 className="text-white text-2xl">
               LLEVALOS AL{" "}
               <span className="text-[#82027D]">SIGUIENTE NIVEL</span>{" "}
             </h2>

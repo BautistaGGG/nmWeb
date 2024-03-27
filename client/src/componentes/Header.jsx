@@ -2,10 +2,10 @@ function Header() {
   return (
     <section className="bg-center bg-cover bg-no-repeat bg-nicoPortada bg-blend-multiply bg-gray-500">
       <div className="px-6 py-24 lg:py-56 mx-auto max-w-screen-xl text-center">
-        <h1 className="italic mb-4 text-4xl md:text-[2rem] lg:text-[2.75rem] xl:text-6xl font-extrabold tracking-tight leading-none text-white">
+        <h1 className="italic my-8 lg:mt-0 lg:mb-4 text-[2rem] lg:text-[2.75rem] xl:text-6xl font-extrabold tracking-tight leading-none text-white">
           ¡DESBLOQUEA TU MAS ALTO POTENCIAL!
         </h1>
-        <p className="bg-[#0000006e] border-2 border-[#82027D] text-lg font-bold text-gray-300 lg:leading-8 my-8 lg:mx-28 sm:px-16 lg:px-48">
+        <p className="bg-[#0000006e] border-2 border-[#82027D] text-base font-bold text-gray-300 lg:leading-8 my-8 lg:mx-28 sm:px-16 lg:px-48">
           TE AYUDO A MEJORAR TUS HÁBITOS, MENTALIDAD, AUTOESTIMA, CONFIANZA Y
           LOGRAR EL CUERPO DE TUS SUEÑOS.
         </p>

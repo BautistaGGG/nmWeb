@@ -15,15 +15,15 @@ function Intro() {
       <section className="bg-[#040404] dark:bg-gray-900" id="info">
         <article className="gap-16 items-start py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
           <aside className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white dark:text-white">
+            <h2 className="text-[1.65rem] lg:text-4xl m-0 lg:mb-4  tracking-tight font-extrabold text-white dark:text-white">
               Nuevos <span className="italic"> HABITOS </span>{" "}
               <span className="text-[#82027D] ml-1"> + </span>
             </h2>
-            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white dark:text-white">
+            <h2 className="text-[1.65rem] lg:text-4xl m-0 lg:mb-4  tracking-tight font-extrabold text-white dark:text-white">
               Nueva <span className="italic"> MENTALIDAD </span>{" "}
               <span className="text-[#82027D] ml-1"> + </span>
             </h2>
-            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white dark:text-white">
+            <h2 className="text-[1.65rem] lg:text-4xl m-0 lg:mb-4  tracking-tight font-extrabold text-white dark:text-white">
               Nuevo <span className="italic"> FISICO </span>{" "}
               <span className="text-[#82027D] ml-1"> = </span>
             </h2>
@@ -63,7 +63,7 @@ function Intro() {
           <img
             src={logoNico2}
             alt="nicolásMarban Logo"
-            className="px-4 h-32 w-auto"
+            className="px-4 h-8 lg:h-32 w-auto"
           />
         </div>
         <div className="bg-white"></div>
