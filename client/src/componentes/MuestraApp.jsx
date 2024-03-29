@@ -6,14 +6,14 @@ export default function MuestraApp() {
       <h2 className="my-4 text-2xl lg:text-3xl xl:text-[2.8rem] text-center italic font-extrabold text-black dark:text-white">
         DESCARGA TU PLAN EN CUALQUIER DISPOSITIVO
       </h2>
-      <article className="flex flex-col lg:flex-row justify-center gap-6 py-8 px-4 lg:py-16 lg:px-6 mx-auto max-w-screen-xl ">
+      <article className="flex flex-col items-center lg:items-stretch lg:flex-row justify-center gap-6 py-8 px-4 lg:py-16 lg:px-6 mx-auto max-w-screen-xl ">
         <aside className="grid content-between">
-          <div className="grid gap-4">
+          <div className="grid gap-4 grid-rows-2 lg:grid-rows-none items-center lg:items-stretch">
             <svg
               viewBox="0 0 63 79"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="ml-auto h-10 lg:h-[72px] w-10 lg:w-20"
+              className="ml-auto h-10 lg:h-[72px] w-10 lg:w-20 self-end lg:self-auto"
             >
               <path
                 d="M61.3438 1.625V50.2493H42.5V19.5252C42.5 14.7778 44.4853 10.2247 48.0192 6.8678C51.5531 3.51087 56.3461 1.625 61.3438 1.625Z"
@@ -72,7 +72,7 @@ export default function MuestraApp() {
             </p>
           </div>
 
-          <div className="grid gap-4">
+          <div className="grid gap-4 grid-rows-2 lg:grid-rows-none items-center lg:items-stretch">
             <p className="text-gris text-base lg:text-xl text-right font-semibold ml-auto">
               Alimentación adecuada en función al plan elegido
             </p>
@@ -142,10 +142,10 @@ export default function MuestraApp() {
           </div>
         </aside>
 
-        <img src={nicoApp} className=" max-w-[40%]" alt="nicoApp-mobile" />
+        <img src={nicoApp} className="max-w-[70%] md:max-w-[40%]" alt="nicoApp-mobile" />
 
         <aside className="grid content-between">
-          <div className="grid gap-4">
+          <div className="grid gap-4 grid-rows-2 lg:grid-rows-none items-center lg:items-stretch">
             <svg
               viewBox="0 0 85 82"
               fill="none"
@@ -176,7 +176,7 @@ export default function MuestraApp() {
             </p>
           </div>
 
-          <div className="grid gap-4">
+          <div className="grid gap-4 grid-rows-2 lg:grid-rows-none items-center lg:items-stretch">
             <p className="text-gris text-base lg:text-xl text-left font-semibold">
               Apoyo y disciplina constante son la clave para no perder el foco
             </p>
@@ -184,7 +184,7 @@ export default function MuestraApp() {
               viewBox="0 0 78 90"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="h-10 lg:h-[72px] w-10 lg:w-20"
+              className="h-10 lg:h-[72px] w-10 lg:w-20 self-end lg:self-auto"
             >
               <path
                 d="M41.0529 5.04027H42.0529H48.0931C49.2088 5.04027 50.1133 4.13582 50.1133 3.02013C50.1133 1.90445 49.2088 1 48.0931 1H39.0327H29.9723C28.8566 1 27.9522 1.90444 27.9522 3.02013C27.9522 4.13583 28.8566 5.04027 29.9723 5.04027H36.0126H37.0126V6.04027V12.8007V13.7264L36.0896 13.7977C16.6679 15.2985 1.375 31.5348 1.375 51.3422C1.375 72.1399 18.2349 89 39.0327 89C59.8305 89 76.6906 72.1399 76.6906 51.3422C76.6906 40.7693 72.3346 31.2157 65.3167 24.3747L64.5914 23.6677L65.3076 22.9515L71.1963 17.063L71.9034 17.7701L71.1963 17.063C72.2802 15.9792 72.2802 14.2221 71.1963 13.1384C70.1124 12.0545 68.3554 12.0545 67.2715 13.1383L61.2321 19.1777L41.0529 5.04027ZM41.0529 5.04027V6.04027M41.0529 5.04027V6.04027M41.0529 6.04027V12.8007V13.7264M41.0529 6.04027V13.7264M41.0529 13.7264L41.9758 13.7977M41.0529 13.7264L41.9758 13.7977M41.9758 13.7977C48.4382 14.297 54.4426 16.4274 59.5791 19.7781L60.3788 20.2998M41.9758 13.7977L60.3788 20.2998M60.3788 20.2998L60.9369 19.5251M60.3788 20.2998L60.9369 19.5251M60.9369 19.5251C61.0241 19.404 61.1221 19.2881 61.2312 19.1786L60.9369 19.5251ZM38.0327 51.3422V51.7564L38.3256 52.0493L56.3974 70.1211C51.836 74.3417 45.7362 76.9195 39.0327 76.9195C24.9068 76.9195 13.4555 65.4679 13.4555 51.3422C13.4555 37.5511 24.3703 26.3094 38.0327 25.7842V51.3422ZM39.0327 17.7247C20.4663 17.7247 5.41527 32.7757 5.41527 51.3422C5.41527 69.9084 20.4663 84.9597 39.0327 84.9597C57.599 84.9597 72.6503 69.9085 72.6503 51.3422C72.6503 32.7757 57.599 17.7247 39.0327 17.7247Z"
