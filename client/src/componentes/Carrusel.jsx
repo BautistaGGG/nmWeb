@@ -6,18 +6,9 @@ import dorsales from "../assets/Dorsalera_agarre_cerrado.gif";
 export default function Carrusel() {
   return (
     <div>
-      <section
-        className="text-center italic text-4xl font-extrabold"
-        style={{
-          background: "black",
-        }}
-      >
+      <section className="text-center italic text-4xl font-extrabold" style={{background: "black"}}>
         <aside
-          className="flex justify-center items-center"
-          style={{
-            background: "white",
-          }}
-        >
+          className="flex justify-center items-center" style={{ background: "white"}}>
           <div className="bg-white"></div>
           <div className="bg-[#040404]">
             <img
@@ -46,7 +37,7 @@ export default function Carrusel() {
               calidad.
             </h4> */}
           </div>
-          <div className="grid grid-rows-3 lg:grid-cols-3 justify-items-center gap-4 mt-16">
+          <div className="grid lg:grid-cols-3 justify-items-center gap-4 mt-16">
             <img
               className="rounded-lg border-2 border-black"
               src={aductores_maquina}

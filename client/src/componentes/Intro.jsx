@@ -119,8 +119,8 @@ function Intro() {
       <section className="bg-white text-center italic text-4xl font-extrabold">
         <article className="items-center py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
           <div>
-            <h2 className="text-black text-3xl"> YO lo logré </h2>
-            <h2 className="text-black text-3xl">
+            <h2 className="text-black text-3xl lg:text-[2.8rem]"> YO lo logré </h2>
+            <h2 className="text-black text-3xl lg:text-[2.8rem]">
               ahora <br className="lg:hidden"/> <span className="text-[#82027D] text-3xl">¡TE TOCA A VOS!</span>{" "}
             </h2>
           </div>

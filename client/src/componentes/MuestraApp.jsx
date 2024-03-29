@@ -3,7 +3,7 @@ import nicoApp from "../assets/plan_app.png";
 export default function MuestraApp() {
   return (
     <section style={{background: "linear-gradient(to bottom, white 25%, black 0%, white 25%, white 47%, black 47%, black 0%)"}}>
-      <h2 className="my-4 text-[28px] lg:text-3xl xl:text-[2.8rem] text-center italic font-extrabold text-black dark:text-white">
+      <h2 className="my-4 text-2xl lg:text-3xl xl:text-[2.8rem] text-center italic font-extrabold text-black dark:text-white">
         DESCARGA TU PLAN EN CUALQUIER DISPOSITIVO
       </h2>
       <article className="flex flex-col lg:flex-row justify-center gap-6 py-8 px-4 lg:py-16 lg:px-6 mx-auto max-w-screen-xl ">
@@ -142,7 +142,7 @@ export default function MuestraApp() {
           </div>
         </aside>
 
-        <img src={nicoApp} alt="nicoApp-mobile" />
+        <img src={nicoApp} className=" max-w-[40%]" alt="nicoApp-mobile" />
 
         <aside className="grid content-between">
           <div className="grid gap-4">
@@ -150,7 +150,7 @@ export default function MuestraApp() {
               viewBox="0 0 85 82"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="h-10 lg:h-[72px] w-10 lg:w-20"
+              className="bg-white lg:bg-none rounded-full lg:rounded-none h-10 lg:h-[72px] w-10 lg:w-20"
             >
               <path
                 d="M29.518 31.8188C38.394 31.8188 45.5894 24.9677 45.5894 16.5166C45.5894 8.06539 38.394 1.21436 29.518 1.21436C20.642 1.21436 13.4465 8.06539 13.4465 16.5166C13.4465 24.9677 20.642 31.8188 29.518 31.8188Z"
