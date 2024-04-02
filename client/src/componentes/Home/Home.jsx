@@ -7,6 +7,7 @@ import Planes from "../Planes";
 import Faq from "../Faq";
 import Carrusel from "../Carrusel";
 import Footer from "../Footer";
+import { AttentionSeeker } from "react-awesome-reveal";
 
 export default function Home() {
   // Renderizando todos los componentes de la landing en un solo lugar.
@@ -18,7 +19,9 @@ export default function Home() {
       <Transformaciones />
       <MuestraApp />
       <Carrusel />
-      <Planes />
+      <AttentionSeeker effect="pulse">
+        <Planes />
+      </AttentionSeeker>
       <Faq />
       <Footer />
     </div>

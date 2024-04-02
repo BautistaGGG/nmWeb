@@ -1,12 +1,10 @@
-// import logoNavbar from "../assets/logo_blanco.png"
 import logoNico2 from "../assets/logo_blanco_recortada.png";
 import nicoIntro_1 from "../assets/Nico_intro_1.jpg";
 import nicoIntro_2 from "../assets/Nico_intro_2.jpg";
 import nicoHistoria from "../assets/Nico_historia.jpg";
 import nicoTransformacion_1 from "../assets/Nico_transformacion_1.1.jpeg";
 import nicoTransformacion_2 from "../assets/Nico_transformacion_2.1.jpeg";
-
-// RECORDAR AGREGAR ANIMACIONES
+import { Fade } from "react-awesome-reveal";
 
 function Intro() {
   return (
@@ -41,6 +39,7 @@ function Intro() {
           </aside>
 
           <div className="grid grid-cols-2 gap-4">
+          <Fade direction="right" triggerOnce>
             <img
               className="lg:m-0 w-full rounded-lg"
               src={nicoIntro_1}
@@ -51,6 +50,7 @@ function Intro() {
               src={nicoIntro_2}
               alt="office content 2"
             />
+            </Fade>
           </div>
         </article>
       </section>
@@ -115,7 +115,7 @@ function Intro() {
       </section>
       {/* MI HISTORIA */}
 
-      {/* TRANSFORMACION NICO - RECORDAR AGREGAR ANIMACIONES */}
+      {/* TRANSFORMACION NICO*/}
       <section className="bg-white text-center italic text-4xl font-extrabold">
         <article className="items-center py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
           <div>
@@ -125,16 +125,14 @@ function Intro() {
             </h2>
           </div>
           <div className="grid grid-cols-2 justify-items-center gap-4 mt-16">
-            <img
-              className="w-4/5 rounded-lg border-2 border-black"
-              src={nicoTransformacion_1}
-              alt="office content 1"
-            />
-            <img
-              className="w-4/5 rounded-lg border-2 border-black"
-              src={nicoTransformacion_2}
-              alt="office content 2"
-            />
+            {/* FIXEAR TAMAÑOS IMG */}
+          <Fade direction="left">
+            <img className="w-4/5 rounded-lg border-2 border-black" src={nicoTransformacion_1} alt="office content 1" />
+          </Fade>
+
+          <Fade direction="right">
+            <img className="w-4/5 rounded-lg border-2 border-black" src={nicoTransformacion_2} alt="office content 2" />
+          </Fade>
           </div>
         </article>
       </section>
