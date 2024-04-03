@@ -19,7 +19,7 @@ export default function Home() {
       <Transformaciones />
       <MuestraApp />
       <Carrusel />
-      <AttentionSeeker effect="pulse">
+      <AttentionSeeker effect="pulse" triggerOnce>
         <Planes />
       </AttentionSeeker>
       <Faq />

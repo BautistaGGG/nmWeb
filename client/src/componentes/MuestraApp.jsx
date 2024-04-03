@@ -4,7 +4,7 @@ import { Fade } from "react-awesome-reveal";
 export default function MuestraApp() {
   return (
     <section style={{background: "linear-gradient(to bottom, white 25%, black 0%, white 25%, white 47%, black 47%, black 0%)"}}>
-      <Fade>
+      <Fade triggerOnce>
         <h2 className="my-4 text-2xl lg:text-3xl xl:text-[2.8rem] text-center italic font-extrabold text-black dark:text-white">
           DESCARGA TU PLAN EN CUALQUIER DISPOSITIVO
         </h2>

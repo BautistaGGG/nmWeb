@@ -1,5 +1,6 @@
 import transformacionHombre from "../assets/transform_1.3.png";
 import transformacionMujer from "../assets/transform_2.3.png";
+// import { Carousel } from "flowbite-react";
 
 function Transformaciones() {
   return (
@@ -122,3 +123,16 @@ function Transformaciones() {
 }
 
 export default Transformaciones;
+
+// import { Carousel } from "flowbite-react";
+// PERDIDA DE CALIDAD DE LAS IMAGENES AL USAR ESTE FORMATO
+// <div className="h-56 lg:block lg:my-0 lg:mx-auto lg:w-3/5 sm:h-64 xl:h-screen 2xl:h-96">
+//   <Carousel slideInterval={2000}>
+//     <img src={transformacionHombre} alt="..." />
+//     <img src={transformacionMujer} alt="..." />
+//     <img src={transformacionHombre} alt="..." />
+//     <img src={transformacionMujer} alt="..." />
+//     <img src={transformacionHombre} alt="..." />
+//     <img src={transformacionMujer} alt="..." />
+//   </Carousel>
+// </div>

@@ -4,7 +4,7 @@ import nicoIntro_2 from "../assets/Nico_intro_2.jpg";
 import nicoHistoria from "../assets/Nico_historia.jpg";
 import nicoTransformacion_1 from "../assets/Nico_transformacion_1.1.jpeg";
 import nicoTransformacion_2 from "../assets/Nico_transformacion_2.1.jpeg";
-import { Fade } from "react-awesome-reveal";
+import { Fade, Zoom } from "react-awesome-reveal";
 
 function Intro() {
   return (
@@ -39,24 +39,16 @@ function Intro() {
           </aside>
 
           <div className="grid grid-cols-2 gap-4">
-          <Fade direction="right" triggerOnce>
-            <img
-              className="lg:m-0 w-full rounded-lg"
-              src={nicoIntro_1}
-              alt="office content 1"
-            />
-            <img
-              className="mt-4 w-full lg:mt-10 rounded-lg"
-              src={nicoIntro_2}
-              alt="office content 2"
-            />
+            <Fade direction="right" triggerOnce>
+              <img className="lg:m-0 w-full rounded-lg" src={nicoIntro_1} alt="office content 1"/>
+              <img className="mt-4 w-full lg:mt-10 rounded-lg" src={nicoIntro_2} alt="office content 2"/>
             </Fade>
           </div>
         </article>
       </section>
       {/* TEXTO TRANSFORMACIÓN E IMÁGENESx2 */}
 
-      {/* LÍNEA DIVISORIA CON LOGO NICO - FIXEAR TAMAÑO DE LAS LINEAS */}
+      {/* LÍNEA DIVISORIA CON LOGO NICO */}
       <aside className="flex justify-center items-center">
         <div className="bg-white"></div>
         <div className="bg-[#040404]">
@@ -73,11 +65,9 @@ function Intro() {
       {/* MI HISTORIA */}
       <section className="bg-[#040404] dark:bg-gray-900" id="info">
         <article className="items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:items-start lg:py-16 lg:px-6">
-          <img
-            className="w-4/5 my-4 mx-auto lg:m-0 rounded-lg"
-            src={nicoHistoria}
-            alt="office content 1"
-          />
+          <Zoom>
+            <img className="w-4/5 my-4 mx-auto lg:m-0 rounded-lg" src={nicoHistoria} alt="office content 1"/>
+          </Zoom>
 
           <div className="flex flex-col font-light text-white sm:text-lg dark:text-gray-400">
             <h2 className="self-center mb-4 text-4xl text-center font-extrabold text-white p-3 border border-white rounded-md dark:text-white tracking-tight">
@@ -118,19 +108,19 @@ function Intro() {
       {/* TRANSFORMACION NICO*/}
       <section className="bg-white text-center italic text-4xl font-extrabold">
         <article className="items-center py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-          <div>
+         
             <h2 className="text-black text-3xl lg:text-[2.8rem]"> YO lo logré </h2>
             <h2 className="text-black text-3xl lg:text-[2.8rem]">
               ahora <br className="lg:hidden"/> <span className="text-[#82027D] text-3xl">¡TE TOCA A VOS!</span>{" "}
             </h2>
-          </div>
+          
           <div className="grid grid-cols-2 justify-items-center gap-4 mt-16">
             {/* FIXEAR TAMAÑOS IMG */}
-          <Fade direction="left">
+          <Fade direction="left" triggerOnce>
             <img className="w-4/5 rounded-lg border-2 border-black" src={nicoTransformacion_1} alt="office content 1" />
           </Fade>
 
-          <Fade direction="right">
+          <Fade direction="right" triggerOnce>
             <img className="w-4/5 rounded-lg border-2 border-black" src={nicoTransformacion_2} alt="office content 2" />
           </Fade>
           </div>
