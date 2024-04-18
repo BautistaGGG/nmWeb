@@ -83,7 +83,7 @@ function Intro() {
       {/* MI HISTORIA */}
       <section className="bg-[#040404] dark:bg-gray-900" id="info">
         <article className="items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:items-start lg:py-16 lg:px-6">
-          <Zoom>
+          <Zoom triggerOnce>
             <video
               loading="lazy"
               loop
@@ -145,17 +145,17 @@ function Intro() {
 
           <div className="grid grid-cols-2 justify-items-center gap-4 mt-16">
             {/* FIXEAR TAMAÑOS IMG */}
-            <Fade direction="left" triggerOnce>
+            <Fade direction="left" triggerOnce className="w-4/5"> 
               <img
-                className="w-4/5 rounded-lg border-2 border-black"
+                className="rounded-lg"
                 src={nicoTransformacion_1}
                 alt="office content 1"
               />
             </Fade>
 
-            <Fade direction="right" triggerOnce>
+            <Fade direction="right" triggerOnce className="w-4/5">
               <img
-                className="w-4/5 rounded-lg border-2 border-black"
+                className="rounded-lg"
                 src={nicoTransformacion_2}
                 alt="office content 2"
               />
