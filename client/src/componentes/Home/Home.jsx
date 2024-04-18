@@ -13,7 +13,7 @@ export default function Home() {
   // Renderizando todos los componentes de la landing en un solo lugar.
   return (
     <div>
-      <Navbar />
+      <Navbar /> 
       <Header />
       <Intro />
       <Transformaciones />

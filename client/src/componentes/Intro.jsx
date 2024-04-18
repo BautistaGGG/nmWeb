@@ -1,9 +1,10 @@
 import logoNico2 from "../assets/logo_blanco_recortada.png";
 import nicoIntro_1 from "../assets/Nico_intro_1.jpg";
 import nicoIntro_2 from "../assets/Nico_intro_2.jpg";
-import nicoHistoria from "../assets/Nico_historia.jpg";
+/* import nicoHistoria from "../assets/Nico_historia.jpg"; */
 import nicoTransformacion_1 from "../assets/Nico_transformacion_1.1.jpeg";
 import nicoTransformacion_2 from "../assets/Nico_transformacion_2.1.jpeg";
+import videoNico from "../assets/Nico_web.mp4";
 import { Fade, Zoom } from "react-awesome-reveal";
 
 function Intro() {
@@ -14,15 +15,24 @@ function Intro() {
         <article className="gap-16 items-start py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
           <aside className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
             <h2 className="text-center lg:text-left text-[1.65rem] lg:text-4xl m-0 lg:mb-4  tracking-tight font-extrabold text-white dark:text-white">
-              Nuevos <span className="text-center lg:text-right italic"> HABITOS </span>{" "}
+              Nuevos{" "}
+              <span className="text-center lg:text-right italic">
+                {" "}
+                HABITOS{" "}
+              </span>{" "}
               <span className="block lg:inline text-[#82027D] ml-1"> + </span>
             </h2>
             <h2 className="text-center lg:text-left text-[1.65rem] lg:text-4xl m-0 lg:mb-4  tracking-tight font-extrabold text-white dark:text-white">
-              Nueva <span className="text-center lg:text-right italic"> MENTALIDAD </span>{" "}
+              Nueva{" "}
+              <span className="text-center lg:text-right italic">
+                {" "}
+                MENTALIDAD{" "}
+              </span>{" "}
               <span className="block lg:inline text-[#82027D] ml-1"> + </span>
             </h2>
             <h2 className="text-center lg:text-left text-[1.65rem] lg:text-4xl m-0 lg:mb-4  tracking-tight font-extrabold text-white dark:text-white">
-              Nuevo <span className="text-center lg:text-right italic"> FISICO </span>{" "}
+              Nuevo{" "}
+              <span className="text-center lg:text-right italic"> FISICO </span>{" "}
               <span className="block lg:inline text-[#82027D] ml-1"> = </span>
             </h2>
             <h2 className="mb-4 text-center lg:text-left italic text-2xl xl:text-4xl tracking-tight font-extrabold text-[#82027D] dark:text-white">
@@ -40,8 +50,16 @@ function Intro() {
 
           <div className="grid grid-cols-2 gap-4">
             <Fade direction="right" triggerOnce>
-              <img className="lg:m-0 w-full rounded-lg" src={nicoIntro_1} alt="office content 1"/>
-              <img className="mt-4 w-full lg:mt-10 rounded-lg" src={nicoIntro_2} alt="office content 2"/>
+              <img
+                className="lg:m-0 w-full rounded-lg"
+                src={nicoIntro_1}
+                alt="office content 1"
+              />
+              <img
+                className="mt-4 w-full lg:mt-10 rounded-lg"
+                src={nicoIntro_2}
+                alt="office content 2"
+              />
             </Fade>
           </div>
         </article>
@@ -66,7 +84,15 @@ function Intro() {
       <section className="bg-[#040404] dark:bg-gray-900" id="info">
         <article className="items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:items-start lg:py-16 lg:px-6">
           <Zoom>
-            <img className="w-4/5 my-4 mx-auto lg:m-0 rounded-lg" src={nicoHistoria} alt="office content 1"/>
+            <video
+              loading="lazy"
+              loop
+              autoPlay
+              muted
+              className="w-4/5  mx-auto lg:m-0 rounded-lg"
+            >
+              <source src={videoNico} type="video/mp4"></source>
+            </video>
           </Zoom>
 
           <div className="flex flex-col font-light text-white sm:text-lg dark:text-gray-400">
@@ -108,21 +134,32 @@ function Intro() {
       {/* TRANSFORMACION NICO*/}
       <section className="bg-white text-center italic text-4xl font-extrabold">
         <article className="items-center py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-         
-            <h2 className="text-black text-3xl lg:text-[2.8rem]"> YO lo logré </h2>
-            <h2 className="text-black text-3xl lg:text-[2.8rem]">
-              ahora <br className="lg:hidden"/> <span className="text-[#82027D] text-3xl">¡TE TOCA A VOS!</span>{" "}
-            </h2>
-          
+          <h2 className="text-black text-3xl lg:text-[2.8rem]">
+            {" "}
+            YO lo logré{" "}
+          </h2>
+          <h2 className="text-black text-3xl lg:text-[2.8rem]">
+            ahora <br className="lg:hidden" />{" "}
+            <span className="text-[#82027D] text-3xl">¡TE TOCA A VOS!</span>{" "}
+          </h2>
+
           <div className="grid grid-cols-2 justify-items-center gap-4 mt-16">
             {/* FIXEAR TAMAÑOS IMG */}
-          <Fade direction="left" triggerOnce>
-            <img className="w-4/5 rounded-lg border-2 border-black" src={nicoTransformacion_1} alt="office content 1" />
-          </Fade>
+            <Fade direction="left" triggerOnce>
+              <img
+                className="w-4/5 rounded-lg border-2 border-black"
+                src={nicoTransformacion_1}
+                alt="office content 1"
+              />
+            </Fade>
 
-          <Fade direction="right" triggerOnce>
-            <img className="w-4/5 rounded-lg border-2 border-black" src={nicoTransformacion_2} alt="office content 2" />
-          </Fade>
+            <Fade direction="right" triggerOnce>
+              <img
+                className="w-4/5 rounded-lg border-2 border-black"
+                src={nicoTransformacion_2}
+                alt="office content 2"
+              />
+            </Fade>
           </div>
         </article>
       </section>

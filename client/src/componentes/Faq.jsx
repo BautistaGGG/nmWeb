@@ -1,4 +1,4 @@
-import { Accordion } from 'flowbite-react';
+import { Accordion } from "flowbite-react";
 
 export default function Faq() {
   return (
@@ -8,10 +8,10 @@ export default function Faq() {
           PREGUNTAS FRECUENTES
         </h2>
         {/* CONTENEDOR PREGUNTAS Y RESPUESTAS */}
-        <Accordion collapseAll className='border-none'>
+        <Accordion collapseAll className="border-none">
           {/* PREGUNTA 1 */}
-          <Accordion.Panel className=''>
-            <Accordion.Title className='text-white'>
+          <Accordion.Panel className="">
+            <Accordion.Title className="text-white">
               ¿Cómo recibo mi programa?
             </Accordion.Title>
             <Accordion.Content>
@@ -24,7 +24,7 @@ export default function Faq() {
 
           {/* PREGUNTA 2 */}
           <Accordion.Panel>
-            <Accordion.Title className='text-white'>
+            <Accordion.Title className="text-white">
               ¿Los planes se pagan mensualmente o es una única compra?
             </Accordion.Title>
             <Accordion.Content>
@@ -37,23 +37,24 @@ export default function Faq() {
 
           {/* PREGUTNA 3 */}
           <Accordion.Panel>
-            <Accordion.Title className='text-white'>
-              ¿Puedo hacer el plan en casa?     
+            <Accordion.Title className="text-white">
+              ¿Puedo hacer el plan en casa?
             </Accordion.Title>
             <Accordion.Content>
               <p className="mb-2 text-gris text-sm lg:text-base">
-                Por supuesto que podes hacer el plan de entrenamiento en tu hogar
-                o en espacios abiertos. Es necesario saber con que material contas
-                para asi adaptar la rutina a tus necesidades asegurandonos de que
-                obtengas los mismos resultados que si fueras al gimnasio.
+                Por supuesto que podes hacer el plan de entrenamiento en tu
+                hogar o en espacios abiertos. Es necesario saber con que
+                material contas para asi adaptar la rutina a tus necesidades
+                asegurandonos de que obtengas los mismos resultados que si
+                fueras al gimnasio.
               </p>
             </Accordion.Content>
           </Accordion.Panel>
 
           {/* PREGUNTA 4 */}
-          <Accordion.Panel id='panelFAQ'>
-            <Accordion.Title className='text-white'>
-            ¿Todos los meses son iguales?
+          <Accordion.Panel id="panelFAQ">
+            <Accordion.Title className="text-white">
+              ¿Todos los meses son iguales?
             </Accordion.Title>
             <Accordion.Content>
               <p className="mb-2 text-gris text-sm lg:text-base">
@@ -65,8 +66,8 @@ export default function Faq() {
 
           {/* PREGUNTA 5 */}
           <Accordion.Panel>
-            <Accordion.Title className='text-white'>
-            Soy nuevo en el gimnasio, ¿es bueno para principiantes?
+            <Accordion.Title className="text-white">
+              Soy nuevo en el gimnasio, ¿es bueno para principiantes?
             </Accordion.Title>
             <Accordion.Content>
               <p className="mb-2 text-gris text-sm lg:text-base">
@@ -78,20 +79,21 @@ export default function Faq() {
 
           {/* PREGUTNA 6 */}
           <Accordion.Panel>
-            <Accordion.Title className='text-white'>
-            Reembolsos y devoluciones    
+            <Accordion.Title className="text-white">
+              Reembolsos y devoluciones
             </Accordion.Title>
             <Accordion.Content>
               <p className="mb-2 text-gris text-sm lg:text-base">
-                Por supuesto que podes hacer el plan de entrenamiento en tu hogar
-                o en espacios abiertos. Es necesario saber con que material contas
-                para asi adaptar la rutina a tus necesidades asegurandonos de que
-                obtengas los mismos resultados que si fueras al gimnasio.
+                Por supuesto que podes hacer el plan de entrenamiento en tu
+                hogar o en espacios abiertos. Es necesario saber con que
+                material contas para asi adaptar la rutina a tus necesidades
+                asegurandonos de que obtengas los mismos resultados que si
+                fueras al gimnasio.
               </p>
             </Accordion.Content>
           </Accordion.Panel>
         </Accordion>
-      </div> 
+      </div>
     </section>
   );
 }

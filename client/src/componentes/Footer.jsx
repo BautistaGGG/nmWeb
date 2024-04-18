@@ -5,7 +5,7 @@ import iconoYoutube from "../assets/logo_youtube.png";
 function Footer() {
   return (
     <div>
-      <section className="bg-[#040404] dark:bg-gray-900" id="newsletter">
+      {/*   <section className="bg-[#040404] dark:bg-gray-900" id="newsletter">
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
           <div className="mx-auto max-w-screen-md sm:text-center">
             <h2 className="mb-4 text-3xl text-center tracking-tight font-extrabold text-white sm:text-4xl dark:text-white">
@@ -58,13 +58,16 @@ function Footer() {
             </form>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <footer className="bg-gradient-to-t from-[#82027D] to-[#040404]  shadow sm:flex sm:items-center sm:justify-between p-4 sm:p-6 xl:p-8 dark:bg-gray-00 antialiased" id="contacto">
+      <footer
+        className="bg-gradient-to-t from-[#82027D] to-[#040404]  shadow sm:flex sm:items-center sm:justify-between p-4 sm:p-6 xl:p-8 dark:bg-gray-00 antialiased"
+        id="contacto"
+      >
         <p className="mb-4 text-sm text-center text-white dark:text-gray-400 sm:mb-0">
           &copy; 2024 Nicolas Marban
         </p>
-        <p className="my-6 mx-auto text-center lg:mb-4 mb-4 text-sm text-white sm:mb-0 ">
+        <p className="my-6 mx-auto text-center lg:mb-4 mb-4 text-sm text-white sm:mb-2 ">
           Creada por Lautaro Gayoso - Bautista Gonzalez
         </p>
 

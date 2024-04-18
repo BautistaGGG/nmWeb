@@ -19,26 +19,26 @@
 }
 
 /* ESTILOS ACCORDION */
-.divide-y > .flex{
+.divide-y > .flex {
   background-color: #040404 !important;
 }
 
-.divide-y > .flex:hover{
-  background-color: #09090B !important;
+.divide-y > .flex:hover {
+  background-color: #09090b !important;
 }
-.divide-y > .flex:focus{
-  background-color: #09090B !important;
+.divide-y > .flex:focus {
+  background-color: #09090b !important;
   box-shadow: none;
 }
 
-.divide-y > .flex path{
-  color: #82027d
+.divide-y > .flex path {
+  color: #82027d;
 }
 
 /* ESTILOS ACCORDION */
 
 /* ESTILOS NAVBAR */
-nav > div{
+nav > div {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -49,43 +49,40 @@ nav > div{
   padding: 16px;
 }
 
-nav div ul div button:hover{
+nav div ul div button:hover {
   color: #82027d;
 }
 
-nav div ul div button svg{
+nav div ul div button svg {
   height: 24px;
   width: 24px;
 }
 
-nav > .flex > button:hover{
+nav > .flex > button:hover {
   background-color: #040404;
 }
 
-nav > .flex >button:focus{
+nav > .flex > button:focus {
   box-shadow: none;
 }
 
-
 /* ESTILOS NAVBAR */
-
 
 /* ESTILOS PLANES */
 
-#planes .flex span, #planes h3{
+#planes .flex span,
+#planes h3 {
   text-shadow: 1px 2px 1px black;
 }
 
-#planes ul span{
+#planes ul span {
   text-shadow: 1px 2px 1px black;
   font-size: 17px;
 }
 
-#planes button > span{
+#planes button > span {
   text-shadow: 1px 2px 1px black;
 }
-
-
 
 /* ESTILOS PLANES */
 
@@ -100,25 +97,21 @@ h1 {
   line-height: 1.1;
 }
 
-
 /* BUTTON MERCADO PAGO */
 
-#planes button span{
+#planes button span {
   font-size: 18px;
   font-weight: 500;
   text-shadow: 1px 1px 1px black;
 }
 
-#planes button:hover{
+#planes button:hover {
   background: #82027da6 !important;
 }
 
-  #walletBrick_container button{
-    /* background-color: green !important;
+#walletBrick_container button {
+  /* background-color: green !important;
     color: yellow !important; */
-  }
-
+}
 
 /* BUTTON MERCADO PAGO */
-
-

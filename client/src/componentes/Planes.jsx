@@ -1,6 +1,6 @@
 import { initMercadoPago, Wallet } from "@mercadopago/sdk-react";
 import axios from "axios";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { mercadoPagoKey } from "../../utils/mercadoKey";
 import { Button, Modal } from "flowbite-react";
 
@@ -15,10 +15,6 @@ function Planes() {
   initMercadoPago(mercadoPagoKey, {
     locale: "es-AR",
   }); // Aca va la key de la cuenta a donde queres recibir los pagos
-
-  useEffect(() => {
-    console.log(title, price);
-  }, [price]);
 
   const payment = async () => {
     try {
@@ -182,21 +178,31 @@ function Planes() {
             </ul>
 
             {/* Se dispara el pago  */}
-            
-            <button 
+
+            <button
               className="bg-[#82027D] hover:bg-[#82027da6] text transition-all text-white hover:text-slate-300 text-center text-sm lg:text-lg font-medium mb-0 mx-auto mt-auto px-5 py-2.5 border-2 border-[#82027D] focus:ring-4 focus:ring-primary-200 rounded-lg dark:text-white  dark:focus:ring-primary-900"
-              onClick={ () => { price === 29 && setOpenModal(true), handlePayment(29), handleTitle("Masa muscular")} }
+              onClick={() => {
+                price === 29 && setOpenModal(true),
+                  handlePayment(29),
+                  handleTitle("Masa muscular");
+              }}
             >
               {price === 29 ? "COMENCEMOS!" : "¿LISTO PARA EL CAMBIO?"}
             </button>
 
-              <Modal dismissible show={openModal} onClose={() => setOpenModal(false)}>
-                <Modal.Header>PLAN: {title}</Modal.Header>
-                <Modal.Body>
-                  <div className="space-y-6">
-                  {paymentMp && <Wallet initialization={{ preferenceId: paymentMp }} />}
-                  </div>
-                </Modal.Body>
+            <Modal
+              dismissible
+              show={openModal}
+              onClose={() => setOpenModal(false)}
+            >
+              <Modal.Header>PLAN: {title}</Modal.Header>
+              <Modal.Body>
+                <div className="space-y-6">
+                  {paymentMp && (
+                    <Wallet initialization={{ preferenceId: paymentMp }} />
+                  )}
+                </div>
+              </Modal.Body>
 
               <Modal.Footer>
                 <Button color="gray" onClick={() => setOpenModal(false)}>
@@ -354,7 +360,11 @@ function Planes() {
             </ul>
             <button
               className="bg-[#82027D] hover:bg-[#82027da6] transition-all text-white hover:text-slate-300 text-center text-sm lg:text-lg font-medium mb-0 mx-auto mt-auto px-5 py-2.5 border-2 border-[#82027D] focus:ring-4 focus:ring-primary-200 rounded-lg dark:text-white  dark:focus:ring-primary-900"
-              onClick={ () => { price === 99 && setOpenModal(true), handlePayment(99), handleTitle("Eliminación de grasa y tonificación")} }
+              onClick={() => {
+                price === 99 && setOpenModal(true),
+                  handlePayment(99),
+                  handleTitle("Eliminación de grasa y tonificación");
+              }}
             >
               {price === 99 ? "COMENCEMOS!" : "¿LISTO PARA EL CAMBIO?"}
             </button>
@@ -442,9 +452,13 @@ function Planes() {
             </ul>
             <button
               className="bg-[#82027D] hover:bg-[#82027da6] transition-all text-white hover:text-slate-300 text-center text-sm lg:text-lg font-medium mb-0 mx-auto mt-auto px-5 py-2.5 border-2 border-[#82027D] focus:ring-4 focus:ring-primary-200 rounded-lg dark:text-white  dark:focus:ring-primary-900"
-              onClick={ () => { price === 499 && setOpenModal(true), handlePayment(499), handleTitle("Coaching 1 a 1")} }
+              onClick={() => {
+                price === 499 && setOpenModal(true),
+                  handlePayment(499),
+                  handleTitle("Coaching 1 a 1");
+              }}
             >
-              {price === 499 ? "COMENCEMOS!" : "¿LISTO PARA EL CAMBIO?" }
+              {price === 499 ? "COMENCEMOS!" : "¿LISTO PARA EL CAMBIO?"}
             </button>
           </div>
         </div>
