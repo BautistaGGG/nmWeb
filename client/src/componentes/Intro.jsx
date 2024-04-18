@@ -1,13 +1,39 @@
 import logoNico2 from "../assets/logo_blanco_recortada.png";
 import nicoIntro_1 from "../assets/Nico_intro_1.jpg";
 import nicoIntro_2 from "../assets/Nico_intro_2.jpg";
+import nicoIntro_3 from "../assets/Nico_intro_3.jpg";
+import nicoIntro_4 from "../assets/Nico_intro_4.jpg";
+import nicoIntro_5 from "../assets/Nico_intro_5.jpg";
+import nicoIntro_6 from "../assets/Nico_intro_6.jpg";
 /* import nicoHistoria from "../assets/Nico_historia.jpg"; */
 import nicoTransformacion_1 from "../assets/Nico_transformacion_1.1.jpeg";
 import nicoTransformacion_2 from "../assets/Nico_transformacion_2.1.jpeg";
 import videoNico from "../assets/Nico_web.mp4";
 import { Fade, Zoom } from "react-awesome-reveal";
+import { useState, useEffect } from "react";
 
 function Intro() {
+  const images1 = [nicoIntro_1, nicoIntro_3, nicoIntro_5];
+  const images2 = [nicoIntro_2, nicoIntro_4, nicoIntro_6];
+
+  const [currentImage1, setCurrentImage1] = useState(0);
+  const [currentImage2, setCurrentImage2] = useState(0);
+
+  useEffect(() => {
+    const timer1 = setInterval(() => {
+      setCurrentImage1((currentImage1) => (currentImage1 + 1) % images1.length);
+    }, 7000);
+
+    const timer2 = setInterval(() => {
+      setCurrentImage2((currentImage2) => (currentImage2 + 1) % images1.length);
+    }, 7000);
+
+    return () => {
+      clearInterval(timer1);
+      clearInterval(timer2);
+    };
+  }, [images1.length, images2.length]);
+
   return (
     <>
       {/* TEXTO TRANSFORMACIÓN E IMÁGENESx2 */}
@@ -51,14 +77,16 @@ function Intro() {
           <div className="grid grid-cols-2 gap-4">
             <Fade direction="right" triggerOnce>
               <img
+                loading="lazy"
                 className="lg:m-0 w-full rounded-lg"
-                src={nicoIntro_1}
-                alt="office content 1"
+                src={images1[currentImage1]}
+                alt="error"
               />
               <img
+                loading="lazy"
                 className="mt-4 w-full lg:mt-10 rounded-lg"
-                src={nicoIntro_2}
-                alt="office content 2"
+                src={images2[currentImage2]}
+                alt="error"
               />
             </Fade>
           </div>
@@ -91,7 +119,7 @@ function Intro() {
               muted
               className="w-4/5  mx-auto lg:m-0 rounded-lg"
             >
-              <source src={videoNico} type="video/mp4"></source>
+              <source src={videoNico} type="video/mp4" />
             </video>
           </Zoom>
 
@@ -145,7 +173,7 @@ function Intro() {
 
           <div className="grid grid-cols-2 justify-items-center gap-4 mt-16">
             {/* FIXEAR TAMAÑOS IMG */}
-            <Fade direction="left" triggerOnce className="w-4/5"> 
+            <Fade direction="left" triggerOnce className="w-4/5">
               <img
                 className="rounded-lg"
                 src={nicoTransformacion_1}
