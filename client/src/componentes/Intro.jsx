@@ -123,7 +123,7 @@ function Intro() {
             </video>
           </Zoom>
 
-          <div className="flex flex-col font-light text-white sm:text-lg dark:text-gray-400">
+          <div className="mt-8 lg:mt-0 flex flex-col font-light text-white sm:text-lg">
             <h2 className="self-center mb-4 text-4xl text-center font-extrabold text-white p-3 border border-white rounded-md dark:text-white tracking-tight">
               MI HISTORIA
             </h2>
@@ -173,7 +173,7 @@ function Intro() {
 
           <div className="grid grid-cols-2 justify-items-center gap-4 mt-16">
             {/* FIXEAR TAMAÑOS IMG */}
-            <Fade direction="left" triggerOnce className="w-4/5">
+            <Fade direction="left" triggerOnce className="w-full lg:w-3/4">
               <img
                 className="rounded-lg"
                 src={nicoTransformacion_1}
@@ -181,7 +181,7 @@ function Intro() {
               />
             </Fade>
 
-            <Fade direction="right" triggerOnce className="w-4/5">
+            <Fade direction="right" triggerOnce className="w-full lg:w-3/4">
               <img
                 className="rounded-lg"
                 src={nicoTransformacion_2}

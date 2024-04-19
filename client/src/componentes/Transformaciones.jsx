@@ -1,12 +1,23 @@
 import transformacionHombre from "../assets/transform_1.3.png";
 import transformacionMujer from "../assets/transform_2.3.png";
-// import { Carousel } from "flowbite-react";
+import { Carousel } from "flowbite-react";
+import { useState, useEffect } from "react";
 
 function Transformaciones() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % 2);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div>
       {/* <!--TRANSFORMACIONES--> */}
-      <section className="italic" id="TRANSFORMACIONES" style={{background:"linear-gradient(to bottom, black 0%, black 50%, #475569 50%, #475569 100%)"}}>
+      <section className="italic bg-black" id="TRANSFORMACIONES">
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
           <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
             <h2 className="mb-16 text-2xl lg:text-5xl tracking-tight font-extrabold text-white dark:text-white">
@@ -23,97 +34,58 @@ function Transformaciones() {
             </p>
           </div>
 
-          <div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
-            {/* <!-- Contenedor 1 --> */}
-            <div className="p-6 mx-auto max-w-lg xl:p-8">
-              <img
-                src={transformacionHombre}
-                width="full"
-                height="auto"
-                className="w-full rounded-lg"
-                alt="TransformacionMasculina"
-              ></img>
-            </div>
-            {/* <!-- Contenedor 2 --> */}
-            <div className="p-6 mx-auto max-w-lg xl:p-8">
-              <img
-                src={transformacionMujer}
-                width="full"
-                height="auto"
-                className="w-full rounded-lg"
-                alt="TransformacionMasculina"
-              ></img>
-            </div>
-            {/* <!-- Contenedor 3 --> */}
-            <div className="p-6 mx-auto max-w-lg xl:p-8">
-              <img
-                src={transformacionHombre}
-                width="full"
-                height="auto"
-                className="w-full rounded-lg"
-                alt="TransformacionMasculina"
-              ></img>
-            </div>
-            {/* <!-- Contenedor 4 --> */}
-            <div className="p-6 mx-auto max-w-lg xl:p-8">
-              <img
-                src={transformacionMujer}
-                width="full"
-                height="auto"
-                className="w-full rounded-lg"
-                alt="TransformacionMasculina"
-              ></img>
-            </div>
-            {/* <!-- Contenedor 5 --> */}
-            <div className="p-6 mx-auto max-w-lg xl:p-8">
-              <img
-                src={transformacionHombre}
-                width="full"
-                height="auto"
-                className="w-full rounded-lg"
-                alt="TransformacionMasculina"
-              ></img>
-            </div>
-            {/* <!-- Contenedor 6 --> */}
-            <div className="p-6 mx-auto max-w-lg xl:p-8">
-              <img
-                src={transformacionMujer}
-                width="full"
-                height="auto"
-                className="w-full rounded-lg"
-                alt="TransformacionMasculina"
-              ></img>
-            </div>
-            {/* <!-- Contenedor 7 --> */}
-            <div className="p-6 mx-auto max-w-lg xl:p-8">
-              <img
-                src={transformacionHombre}
-                width="full"
-                height="auto"
-                className="w-full rounded-lg"
-                alt="TransformacionMasculina"
-              ></img>
-            </div>
-            {/* <!-- Contenedor 8 --> */}
-            <div className="p-6 mx-auto max-w-lg xl:p-8">
-              <img
-                src={transformacionMujer}
-                width="full"
-                height="auto"
-                className="w-full rounded-lg"
-                alt="TransformacionMasculina"
-              ></img>
-            </div>
-            {/* <!-- Contenedor 9 --> */}
-            <div className="p-6 mx-auto max-w-lg xl:p-8">
-              <img
-                src={transformacionHombre}
-                width="full"
-                height="auto"
-                className="w-full rounded-lg"
-                alt="TransformacionMasculina"
-              ></img>
-            </div>
+          <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
+            <Carousel
+              onSlideChange={(index) => setCurrentIndex(index)}
+              slideInterval={3000}
+            >
+              <div className="flex h-full items-center justify-center">
+                <img
+                  src={transformacionMujer}
+                  alt="Slide 1"
+                  className="w-full lg:w-1/2"
+                />
+                <img
+                  src={transformacionHombre}
+                  alt="Slide 2"
+                  className="w-full lg:w-1/2"
+                />
+              </div>
+              <div className="flex h-full items-center justify-center">
+                <img
+                  src={transformacionMujer}
+                  alt="Slide 3"
+                  className="w-full lg:w-1/2"
+                />
+                <img
+                  src={transformacionHombre}
+                  alt="Slide 4"
+                  className="w-full lg:w-1/2"
+                />
+                <img
+                  src={transformacionMujer}
+                  alt="Slide 1"
+                  className="w-full lg:w-1/2"
+                />
+                <img
+                  src={transformacionHombre}
+                  alt="Slide 2"
+                  className="w-full lg:w-1/2"
+                />
+              </div>
+              <div className="flex h-full items-center justify-center">
+                <img
+                  src={transformacionMujer}
+                  alt="Slide 3"
+                  className="w-full lg:w-1/2"
+                />
+                <img
+                  src={transformacionHombre}
+                  alt="Slide 4"
+                  className="w-full lg:w-1/2"
+                />
+              </div>
+            </Carousel>
           </div>
         </div>
       </section>

@@ -180,7 +180,7 @@ function Planes() {
             {/* Se dispara el pago  */}
 
             <button
-              className="bg-[#82027D] hover:bg-[#82027da6] text transition-all text-white hover:text-slate-300 text-center text-sm lg:text-lg font-medium mb-0 mx-auto mt-auto px-5 py-2.5 border-2 border-[#82027D] focus:ring-4 focus:ring-primary-200 rounded-lg dark:text-white  dark:focus:ring-primary-900"
+              className="bg-[#82027D] hover:bg-[#82027da6] text transition-all text-white  text-center text-sm lg:text-lg font-medium mb-0 mx-auto mt-auto px-5 py-2.5 border-2 border-[#82027D] focus:ring-4 focus:ring-primary-200 rounded-lg dark:text-white  dark:focus:ring-primary-900"
               onClick={() => {
                 price === 29 && setOpenModal(true),
                   handlePayment(29),
@@ -359,7 +359,7 @@ function Planes() {
               </li>
             </ul>
             <button
-              className="bg-[#82027D] hover:bg-[#82027da6] transition-all text-white hover:text-slate-300 text-center text-sm lg:text-lg font-medium mb-0 mx-auto mt-auto px-5 py-2.5 border-2 border-[#82027D] focus:ring-4 focus:ring-primary-200 rounded-lg dark:text-white  dark:focus:ring-primary-900"
+              className="bg-[#82027D] hover:bg-[#82027da6] transition-all text-white text-center text-sm lg:text-lg font-medium mb-0 mx-auto mt-auto px-5 py-2.5 border-2 border-[#82027D] focus:ring-4 focus:ring-primary-200 rounded-lg dark:text-white  dark:focus:ring-primary-900"
               onClick={() => {
                 price === 99 && setOpenModal(true),
                   handlePayment(99),
@@ -451,7 +451,7 @@ function Planes() {
               </li>
             </ul>
             <button
-              className="bg-[#82027D] hover:bg-[#82027da6] transition-all text-white hover:text-slate-300 text-center text-sm lg:text-lg font-medium mb-0 mx-auto mt-auto px-5 py-2.5 border-2 border-[#82027D] focus:ring-4 focus:ring-primary-200 rounded-lg dark:text-white  dark:focus:ring-primary-900"
+              className="bg-[#82027D] hover:bg-[#82027da6] transition-all text-white text-center text-sm lg:text-lg font-medium mb-0 mx-auto mt-auto px-5 py-2.5 border-2 border-[#82027D] focus:ring-4 focus:ring-primary-200 rounded-lg dark:text-white  dark:focus:ring-primary-900"
               onClick={() => {
                 price === 499 && setOpenModal(true),
                   handlePayment(499),

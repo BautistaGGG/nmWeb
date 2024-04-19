@@ -36,7 +36,7 @@ export default function Carrusel() {
                 calidad.
               </h4> */}
             </div>
-            <div className="grid lg:grid-cols-3 justify-items-center gap-4 mt-16">
+            <div className="grid lg:grid-cols-3 justify-items-center gap-4 mt-0 md:mt-16">
               <img className="rounded-lg border-2 border-black" src={aductores_maquina} alt="video1" loading="lazy"/>
                 <img className="rounded-lg border-2 border-black" src={pressFrances} alt="video2" loading="lazy"/>
                 <img className="rounded-lg border-2 border-black" src={dorsales} alt="video3" loading="lazy"/>
