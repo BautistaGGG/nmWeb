@@ -17,7 +17,7 @@ export default function Faq() {
             <Accordion.Content>
               <p className="mb-2 text-gris text-sm lg:text-base">
                 Una vez completados tus datos y realizado el pago de la
-                subscripción, dentro de las proximas 48 horas vas a recibir via
+                suscripción, dentro de las proximas 48 horas vas a recibir via
                 e-mail tu plan de entrenamiento.
               </p>
             </Accordion.Content>
@@ -26,12 +26,12 @@ export default function Faq() {
           {/* PREGUNTA 2 */}
           <Accordion.Panel>
             <Accordion.Title className="text-white">
-              ¿Son planes basados en subscripción?
+              ¿Son planes basados en suscripción?
             </Accordion.Title>
             <Accordion.Content>
               <p className="mb-2 text-gris text-sm lg:text-base">
-                Nuestros planes basados en subscripción. Esta diseñado de esta
-                forma para que puedas continuar con tu progreso, ya que la
+                Sí, nuestros planes están basados en suscripción. Se han diseñado de esta
+                manera para que puedas continuar con tu progreso, ya que la
                 constancía y el seguimiento son muy importantes.
               </p>
             </Accordion.Content>

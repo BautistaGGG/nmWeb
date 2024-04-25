@@ -171,9 +171,8 @@ function Intro() {
             <span className="text-[#82027D] text-3xl">¡TE TOCA A VOS!</span>{" "}
           </h2>
 
-          <div className="grid grid-cols-2 justify-items-center gap-4 mt-16">
-            {/* FIXEAR TAMAÑOS IMG */}
-            <Fade direction="left" triggerOnce className="w-full lg:w-3/4">
+          <div className="grid grid-cols-2 gap-4 mt-16">
+            <Fade direction="left" triggerOnce className="w-full lg:w-3/4 lg:justify-self-start">
               <img
                 className="rounded-lg"
                 src={nicoTransformacion_1}
@@ -181,7 +180,7 @@ function Intro() {
               />
             </Fade>
 
-            <Fade direction="right" triggerOnce className="w-full lg:w-3/4">
+            <Fade direction="right" triggerOnce className="w-full lg:w-3/4 lg:justify-self-end">
               <img
                 className="rounded-lg"
                 src={nicoTransformacion_2}

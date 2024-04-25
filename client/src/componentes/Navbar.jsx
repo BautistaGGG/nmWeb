@@ -12,7 +12,7 @@ export default function navbar() {
       <Navbar.Brand href="/">
         <img
           src={logoNavbar}
-          className="h-8 md:h-20 w-auto transition-transform hover:scale-110 duration-200"
+          className="h-8 md:h-16 w-auto transition-transform hover:scale-110 duration-200"
           alt="Nicolás Marban Logo"
         />
       </Navbar.Brand>
