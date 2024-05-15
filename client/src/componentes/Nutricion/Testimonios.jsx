@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Link } from "react-router-dom"
 
 function Testimonios() {
@@ -17,14 +18,26 @@ function Testimonios() {
                 </svg>
                 <blockquote>
                     <p className="text-xl italic font-medium text-gray-900 dark:text-white">
-                        "Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."
+                        "Hace mas de un año y luego de haber sido intervenido quirurgicamente de una eventracion abdominal,
+                        inicie actividad fisica en el gimnasio Zep donde conoci a mi actual entrenador Nicolas Marban, 
+                        quien en conocimiento de mis antecedentes medicos y el objetivo que yo pretendia 
+                        (descenso de peso y mantenimiento de masa muscular) comenzamos una rutina que debio estar acompañada
+                        de una alimentacion adecuada, para lo cual segui la sugerencia de Nico (mi entrenador) en aceptar 
+                        como nutricionista a Sol, ya que la forma de alimentarme no era la correcta. Asi comenzamos un camino, 
+                        y gracias a la contencion de este equipo de profesionales pude rapidamente conseguir lo que para mi 
+                        era solo un sueño lejano. Baje 20 kilos en pocos meses y no solo eso, aumente el porcentaje 
+                        de masa muscular. Estoy muy contento, porque tambien logre superar el pesimo habito de fumar.
+                        Llevo una mejor calidad de vida, estoy aprendiendo muchisimo en lo que respecta la actividad 
+                        fisica y habitos alimentarios saludables. Me siento mucho mejor y estoy muy a gusto con el 
+                        gimnasio donde entreno ya que hay muy buenos profesores y bueños compañeros. Tengo 54 años y la verdad 
+                        me siento mucho mejor que a los 30, ya que la obecidad siempre me ha acompañado."
                     </p>
                 </blockquote>
                 <hr className="my-4"/>
                 <figcaption className="flex items-center justify-center mt-4 space-x-3 rtl:space-x-reverse">
                     <img className="w-6 h-6 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="profile picture"/>
                     <div className="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-500 dark:divide-gray-700">
-                        <cite className="pe-3 font-medium text-gray-900 dark:text-white">Marcelito de Rueda</cite>
+                        <cite className="pe-3 font-medium text-gray-900 dark:text-white">Walter Gomez</cite>
                     </div>
                 </figcaption>
             </figure>
@@ -35,14 +48,18 @@ function Testimonios() {
                 </svg>
                 <blockquote>
                     <p className="text-xl italic font-medium text-gray-900 dark:text-white">
-                        "Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."
+                        "Hace 9 meses que entreno con Nico y, si tuviese que resumir en pocas palabras como lo describiría,
+                        diria: profesionalismo y vocación de servicio! Agregaría que, junto a su equipo arman un plan de 
+                        entrenamiento muy interesante y personalizado y, además, siempre me senti muy cuidado, con 
+                        explicaciones claras de la rutina y correcciones asertivas para evitar lesiones! 
+                        Estoy muy agradecido!"
                     </p>
                 </blockquote>
                 <hr className="my-4"/>
                 <figcaption className="flex items-center justify-center mt-4 space-x-3 rtl:space-x-reverse">
                     <img className="w-6 h-6 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="profile picture"/>
                     <div className="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-500 dark:divide-gray-700">
-                        <cite className="pe-3 font-medium text-gray-900 dark:text-white">Patron Vernudes</cite>
+                        <cite className="pe-3 font-medium text-gray-900 dark:text-white">Mauricio Naya</cite>
                     </div>
                 </figcaption>
             </figure>
@@ -53,14 +70,19 @@ function Testimonios() {
                 </svg>
                 <blockquote>
                     <p className="text-xl italic font-medium text-gray-900 dark:text-white">
-                        "Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."
+                        "Mi experiencia fue dentro de todo muy positiva. Antes de empezar mi conocimiento en técnicas y 
+                        ejercicios era muy nulo, pero con Nicolás tuve rutinas ingeniosamente arregladas para un mayor 
+                        avance y eficaz crecimiento, noté un gran cambió que nunca creí ser capaz de alcanzar.
+                        Me abrió considerablemente la cabeza en el sentido nutricional, distingo mejor lo bueno de lo 
+                        no tan recomendable y como armar un buen plato, además de aprender como evitar lesionarme 
+                        mediante correcciones."
                     </p>
                 </blockquote>
                 <hr className="my-4"/>
                 <figcaption className="flex items-center justify-center mt-4 space-x-3 rtl:space-x-reverse">
                     <img className="w-6 h-6 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="profile picture"/>
                     <div className="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-500 dark:divide-gray-700">
-                        <cite className="pe-3 font-medium text-gray-900 dark:text-white">Roberto "MOUSE" Ayala</cite>
+                        <cite className="pe-3 font-medium text-gray-900 dark:text-white">Ricardo Lafalce</cite>
                     </div>
                 </figcaption>
             </figure>
