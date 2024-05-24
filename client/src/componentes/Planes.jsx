@@ -58,7 +58,7 @@ function Planes() {
         className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6"
       >
         <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-          <h2 className="my-8 py-4 text-3xl lg:text-[2.8rem] italic font-extrabold text-black dark:text-white">
+          <h2 className="my-8 py-4 text-2xl md:text-3xl lg:text-[2.8rem] italic font-extrabold text-black dark:text-white">
             PLANES, OPCIONES Y BENEFICIOS
           </h2>
         </div>
@@ -66,7 +66,7 @@ function Planes() {
         <div className="grid grid-cols-1 xl:grid xl:grid-cols-3 gap-8 xl:gap-10">
           {/* <!-- Pricing Card --> */}
           <div className="bg-center bg-cover bg-no-repeat bg-planesUno bg-blend-multiply bg-rosaTarjetas mt-0 xl:mt-12 w-full md:w-[384px] flex flex-col p-6 mx-auto max-w-lg text-center rounded-lg border-2 border-black shadow-xl shadow-[#2d2d2d]">
-            <h3 className="mb-4 text-white text-3xl font-bold">
+            <h3 className="mb-4 text-white text-2xl md:text-3xl font-bold">
               VOLUMEN MUSCULAR
             </h3>
             {/* <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
@@ -216,7 +216,7 @@ function Planes() {
 
           {/* <!-- Pricing Card --> */}
           <div className="bg-center bg-cover bg-no-repeat bg-planesDos w-full md:w-[384px] flex flex-col p-6 mx-auto max-w-lg text-center rounded-lg border-2 border-black shadow-xl shadow-[#2d2d2d]">
-            <h3 className="mb-4 text-white text-3xl font-bold">
+            <h3 className="mb-4 text-white text-2xl md:text-3xl font-bold">
               ELIMINACIÓN DE GRASA Y TONIFICACIÓN
             </h3>
             {/* <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
@@ -372,7 +372,7 @@ function Planes() {
 
           {/* <!-- Pricing Card --> */}
           <div className="bg-center bg-cover bg-no-repeat bg-planesTres bg-blend-multiply bg-rosaTarjetas mt-0 xl:mt-12 w-full md:w-[384px] flex flex-col p-6 mx-auto max-w-lg text-center rounded-lg border-2 border-black shadow-xl shadow-[#2d2d2d]">
-            <h3 className="mb-4 text-white text-2xl font-bold">
+            <h3 className="mb-4 text-white text-2xl md:text-3xl font-bold">
               COACHING 1 A 1
             </h3>
             {/* <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">

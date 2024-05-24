@@ -7,7 +7,7 @@ export default function navbar() {
   return (
     <Navbar
       fluid
-      className="z-50 bg-[#040404] fixed w-full shadow-md shadow-[#00000087] border-gray-200 scroll"
+      className="z-50 bg-[#040404] fixed w-full shadow-md shadow-[#00000087] border-gray-200 scroll-smooth"
     >
       <Navbar.Brand href="/">
         <img
@@ -22,17 +22,17 @@ export default function navbar() {
       <Navbar.Collapse>
         <a
           href="#"
-          className="text-white hover:text-violeta text-right lg:text-center text-lg font-bold italic"
+          className="text-white hover:text-violeta text-right lg:text-center text-lg font-bold italic pr-2 md:pr-0"
         >
           HOME
         </a>
 
-        <Link to="/Nutricion" className="text-white hover:text-violeta text-right lg:text-center text-lg font-bold italic">
+        <Link to="/Nutricion" className="text-white hover:text-violeta text-right lg:text-center text-lg font-bold italic pr-2 md:pr-0">
             NUTRICIÓN
         </Link>
         <a
           href="#contacto"
-          className="text-white hover:text-violeta text-right lg:text-center text-lg font-bold italic"
+          className="text-white hover:text-violeta text-right lg:text-center text-lg font-bold italic pr-2 md:pr-0"
         >
           CONTACTO
         </a>
