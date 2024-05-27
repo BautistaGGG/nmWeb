@@ -17,7 +17,7 @@ export default function Faq() {
             <Accordion.Content>
               <p className="mb-2 text-gris text-sm lg:text-base">
                 Una vez completados tus datos y realizado el pago de la
-                suscripción, dentro de las proximas 48 horas vas a recibir via
+                suscripción, dentro de las proximas 48 horas vas a recibir por
                 e-mail tu plan de entrenamiento.
               </p>
             </Accordion.Content>
@@ -30,7 +30,7 @@ export default function Faq() {
             </Accordion.Title>
             <Accordion.Content>
               <p className="mb-2 text-gris text-sm lg:text-base">
-                Sí, nuestros planes están basados en suscripción. Se han diseñado de esta
+                Sí, nuestros planes están basados en suscripciones. Se han diseñado de esta
                 manera para que puedas continuar con tu progreso, ya que la
                 constancía y el seguimiento son muy importantes.
               </p>
@@ -90,7 +90,7 @@ export default function Faq() {
             <Accordion.Content>
               <p className="mb-2 text-gris text-sm lg:text-base">
                 Estamos seguros de que lo que ofrecemos son planes de calidad y
-                que funcionan al 100% por lo cual no hacemos reembolsos ni
+                que funcionan al 100%, por lo tanto no hacemos reembolsos ni
                 devoluciones.
               </p>
             </Accordion.Content>

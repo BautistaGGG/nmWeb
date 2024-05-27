@@ -18,7 +18,7 @@ function IntroNutricion() {
                 Plan personalizado de Nutrición
             </h2>
             <p className="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">
-              Bajo nuestro acompañamiento vas a poder lograr una salud optima, junto con nuestra nutricionista certificada logramos el combo perfecto para que alcances tus metas de una forma mas integral. 
+              Bajo nuestro acompañamiento vas a poder lograr una salud optima, junto con nuestra nutricionista certificada logramos el combo perfecto para que alcances tus metas de una forma integral. 
             </p>
             <a href="#" className="inline-flex items-center text-white bg-violeta hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">
               Comencemos

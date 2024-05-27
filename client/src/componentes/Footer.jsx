@@ -67,8 +67,8 @@ function Footer() {
         <p className="mb-4 text-sm text-center text-white dark:text-gray-400 sm:mb-0">
           &copy; 2024 Nicolas Marban
         </p>
-        <p className="my-6 mx-auto text-center lg:mb-4 mb-4 text-sm text-white sm:mb-2 ">
-          Creada por Lautaro Gayoso - Bautista Gonzalez
+        <p className="my-6 mx-auto text-center lg:mb-4 mb-4 text-sm text-white sm:mb-2 text-balance">
+          Creada por Lautaro Gayoso - Bautista González
         </p>
 
         <div className="flex justify-center items-center space-x-5">

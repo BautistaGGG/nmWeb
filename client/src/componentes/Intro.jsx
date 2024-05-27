@@ -172,7 +172,7 @@ function Intro() {
           </h2>
 
           <div className="grid grid-cols-2 gap-4 mt-16">
-            <Fade direction="left" triggerOnce className="w-full lg:w-3/4 lg:justify-self-start">
+            <Fade direction="left" triggerOnce className="w-full lg:w-3/4 lg:justify-self-end">
               <img
                 className="rounded-lg"
                 src={nicoTransformacion_1}
@@ -180,7 +180,7 @@ function Intro() {
               />
             </Fade>
 
-            <Fade direction="right" triggerOnce className="w-full lg:w-3/4 lg:justify-self-end">
+            <Fade direction="right" triggerOnce className="w-full lg:w-3/4 lg:justify-self-start">
               <img
                 className="rounded-lg"
                 src={nicoTransformacion_2}

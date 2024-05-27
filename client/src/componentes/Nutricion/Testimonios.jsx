@@ -17,20 +17,13 @@ function Testimonios() {
                     <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"/>
                 </svg>
                 <blockquote>
-                    <p className="text-xl italic font-medium text-gray-900 dark:text-white">
-                        "Hace mas de un año y luego de haber sido intervenido quirurgicamente de una eventracion abdominal,
-                        inicie actividad fisica en el gimnasio Zep donde conoci a mi actual entrenador Nicolas Marban, 
-                        quien en conocimiento de mis antecedentes medicos y el objetivo que yo pretendia 
-                        (descenso de peso y mantenimiento de masa muscular) comenzamos una rutina que debio estar acompañada
-                        de una alimentacion adecuada, para lo cual segui la sugerencia de Nico (mi entrenador) en aceptar 
-                        como nutricionista a Sol, ya que la forma de alimentarme no era la correcta. Asi comenzamos un camino, 
-                        y gracias a la contencion de este equipo de profesionales pude rapidamente conseguir lo que para mi 
-                        era solo un sueño lejano. Baje 20 kilos en pocos meses y no solo eso, aumente el porcentaje 
-                        de masa muscular. Estoy muy contento, porque tambien logre superar el pesimo habito de fumar.
-                        Llevo una mejor calidad de vida, estoy aprendiendo muchisimo en lo que respecta la actividad 
-                        fisica y habitos alimentarios saludables. Me siento mucho mejor y estoy muy a gusto con el 
-                        gimnasio donde entreno ya que hay muy buenos profesores y bueños compañeros. Tengo 54 años y la verdad 
-                        me siento mucho mejor que a los 30, ya que la obecidad siempre me ha acompañado."
+                    <p className="text-base italic font-medium text-gray-900 dark:text-white">
+                        "Luego de haber sido intervenido quirurgicamente, conoci a Nicolás.
+                        En conocimiento de mis antecedentes medicos y del objetivo que yo pretendia
+                        me sugirió aceptar a Sol como nutricionista. 
+                        Gracias a la contencion del equipo pude conseguir lo que para mi 
+                        era un sueño. Baje 20 kilos en pocos meses y aumente mi masa muscular. 
+                        Tambien logre superar el pesimo habito de fumar y llevo una mejor calidad de vida."
                     </p>
                 </blockquote>
                 <hr className="my-4"/>
@@ -47,7 +40,7 @@ function Testimonios() {
                     <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"/>
                 </svg>
                 <blockquote>
-                    <p className="text-xl italic font-medium text-gray-900 dark:text-white">
+                    <p className="text-base italic font-medium text-gray-900 dark:text-white">
                         "Hace 9 meses que entreno con Nico y, si tuviese que resumir en pocas palabras como lo describiría,
                         diria: profesionalismo y vocación de servicio! Agregaría que, junto a su equipo arman un plan de 
                         entrenamiento muy interesante y personalizado y, además, siempre me senti muy cuidado, con 
@@ -69,13 +62,12 @@ function Testimonios() {
                     <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"/>
                 </svg>
                 <blockquote>
-                    <p className="text-xl italic font-medium text-gray-900 dark:text-white">
-                        "Mi experiencia fue dentro de todo muy positiva. Antes de empezar mi conocimiento en técnicas y 
-                        ejercicios era muy nulo, pero con Nicolás tuve rutinas ingeniosamente arregladas para un mayor 
+                    <p className="text-base italic font-medium text-gray-900 dark:text-white">
+                        "Mi experiencia fue muy positiva. Antes de empezar mi conocimiento en técnicas y 
+                        ejercicios era nulo, pero con Nicolás tuve rutinas arregladas para un mayor 
                         avance y eficaz crecimiento, noté un gran cambió que nunca creí ser capaz de alcanzar.
-                        Me abrió considerablemente la cabeza en el sentido nutricional, distingo mejor lo bueno de lo 
-                        no tan recomendable y como armar un buen plato, además de aprender como evitar lesionarme 
-                        mediante correcciones."
+                        Me abrió la cabeza en el sentido nutricional, ahora distingo lo bueno de lo 
+                        no tan recomendable y como armar un buen plato, además de aprender a evitar lesiones."
                     </p>
                 </blockquote>
                 <hr className="my-4"/>
