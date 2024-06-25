@@ -67,19 +67,19 @@ function Planes() {
           {/* <!-- Pricing Card --> */}
           <div className="bg-center bg-cover bg-no-repeat bg-planesUno bg-blend-multiply bg-rosaTarjetas mt-0 xl:mt-12 w-full md:w-[384px] flex flex-col p-6 mx-auto max-w-lg text-center rounded-lg border-2 border-black shadow-xl shadow-[#2d2d2d]">
             <h3 className="mb-4 text-white text-2xl md:text-3xl font-bold">
-              VOLUMEN MUSCULAR
+              PROGRAMA INICIAL
             </h3>
             {/* <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
               Programa 100% personalizado
             </p> */}
             <div className="flex justify-center items-baseline my-8">
               <span className="mr-2 text-white text-5xl font-extrabold">
-                $29
+              $12.000 mensual/ $30.000 trimestral  
               </span>
             </div>
             {/* <!-- List --> */}
             <ul role="list" className="mb-8 space-y-4 text-left text-white">
-              <li className="flex items-center space-x-3">
+            <li className="flex items-center space-x-3">
                 {/* <!-- Icon --> */}
                 <svg
                   className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
@@ -93,7 +93,7 @@ function Planes() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                <span>Mayor confianza, presencia y autoestima</span>
+                <span> SELECCIONA ENTRE: AUMENTO DE MASA MUSCULAR - PERDIDA DE GRASA - TONIFICACION </span>
               </li>
               <li className="flex items-center space-x-3">
                 {/* <!-- Icon --> */}
@@ -109,7 +109,7 @@ function Planes() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                <span> Programa FIT individualizado y completo </span>
+                <span>PLAN DE ENTRENAMIENTO PERSONALIZADO </span>
               </li>
               <li className="flex items-center space-x-3">
                 {/* <!-- Icon --> */}
@@ -125,7 +125,7 @@ function Planes() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                <span> Ejercicios guiados en video </span>
+                <span> EJERCICIOS GUIADOS POR VIDEO </span>
               </li>
               <li className="flex items-center space-x-3">
                 {/* <!-- Icon --> */}
@@ -141,7 +141,7 @@ function Planes() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                <span> Variedad de recetas personalizadas </span>
+                <span> PLAN DE ALIMENTACION PERSONALIZADO </span>
               </li>
               <li className="flex items-center space-x-3">
                 {/* <!-- Icon --> */}
@@ -157,7 +157,7 @@ function Planes() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                <span> Lista de compras </span>
+                <span> RECETARIO </span>
               </li>
               <li className="flex items-center space-x-3">
                 {/* <!-- Icon --> */}
@@ -173,7 +173,23 @@ function Planes() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                <span> Seguimiento a través de WhatsApp 24/7 </span>
+                <span> IDEAS DE COMIDAS </span>
+              </li>
+              <li className="flex items-center space-x-3">
+                {/* <!-- Icon --> */}
+                <svg
+                  className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clipRule="evenodd"
+                  ></path>
+                </svg>
+                <span> LISTA DE COMPRAS </span>
               </li>
             </ul>
 
@@ -217,19 +233,19 @@ function Planes() {
           {/* <!-- Pricing Card --> */}
           <div className="bg-center bg-cover bg-no-repeat bg-planesDos w-full md:w-[384px] flex flex-col p-6 mx-auto max-w-lg text-center rounded-lg border-2 border-black shadow-xl shadow-[#2d2d2d]">
             <h3 className="mb-4 text-white text-2xl md:text-3xl font-bold">
-              ELIMINACIÓN DE GRASA Y TONIFICACIÓN
+              PROGRAMA TRANSFORMACION (MAS ELEGIDO)
             </h3>
             {/* <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
               Programa 100% personalizado
             </p> */}
             <div className="flex justify-center items-baseline my-8">
               <span className="text-white mr-2 text-5xl font-extrabold">
-                $99
+                $23.000 mensual/ $60.000 Trimestral 
               </span>
             </div>
             {/* <!-- List --> */}
             <ul role="list" className="mb-8 space-y-4 text-left text-white">
-              <li className="flex items-center space-x-3">
+            <li className="flex items-center space-x-3">
                 {/* <!-- Icon --> */}
                 <svg
                   className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
@@ -243,7 +259,7 @@ function Planes() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                <span>Reducción de grasa corporal</span>
+                <span> SELECCIONA entre: AUMENTO DE MASA MUSCULAR - PERDIDA DE GRASA - TONIFICACION </span>
               </li>
               <li className="flex items-center space-x-3">
                 {/* <!-- Icon --> */}
@@ -259,7 +275,7 @@ function Planes() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                <span>Menor flacidez muscular</span>
+                <span> PLAN DE ENTRENAMIENTO PERSONALIZADO </span>
               </li>
               <li className="flex items-center space-x-3">
                 {/* <!-- Icon --> */}
@@ -275,7 +291,7 @@ function Planes() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                <span>Aumento de abdominales y definición muscular</span>
+                <span> EJERCICIOS GUIADOS POR VIDEO </span>
               </li>
               <li className="flex items-center space-x-3">
                 {/* <!-- Icon --> */}
@@ -291,7 +307,7 @@ function Planes() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                <span>Mayor confianza, presencia y autoestima.</span>
+                <span> PLAN DE ALIMENTACION PERSONALIZADO </span>
               </li>
               <li className="flex items-center space-x-3">
                 {/* <!-- Icon --> */}
@@ -307,7 +323,7 @@ function Planes() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                <span>Programa FIT individualizado y completo</span>
+                <span> RECETARIO </span>
               </li>
               <li className="flex items-center space-x-3">
                 {/* <!-- Icon --> */}
@@ -323,7 +339,7 @@ function Planes() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                <span>Variedad de recetas personalizadas</span>
+                <span> IDEAS DE COMIDAS </span>
               </li>
               <li className="flex items-center space-x-3">
                 {/* <!-- Icon --> */}
@@ -339,7 +355,7 @@ function Planes() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                <span>Lista de compras</span>
+                <span>LISTA DE COMPRAS</span>
               </li>
               <li className="flex items-center space-x-3">
                 {/* <!-- Icon --> */}
@@ -355,7 +371,23 @@ function Planes() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                <span>Seguimiento a través de WhatsApp 24/7</span>
+                <span> GRUPO DE LA COMUNIDAD </span>
+              </li>
+              <li className="flex items-center space-x-3">
+                {/* <!-- Icon --> */}
+                <svg
+                  className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clipRule="evenodd"
+                  ></path>
+                </svg>
+                <span>SEGUIMIENTO POR WHATSAPP</span>
               </li>
             </ul>
             <button
@@ -373,14 +405,14 @@ function Planes() {
           {/* <!-- Pricing Card --> */}
           <div className="bg-center bg-cover bg-no-repeat bg-planesTres bg-blend-multiply bg-rosaTarjetas mt-0 xl:mt-12 w-full md:w-[384px] flex flex-col p-6 mx-auto max-w-lg text-center rounded-lg border-2 border-black shadow-xl shadow-[#2d2d2d]">
             <h3 className="mb-4 text-white text-2xl md:text-3xl font-bold">
-              COACHING 1 A 1
+              COACHING 1 A 1 PRO
             </h3>
             {/* <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
               Programa 100% personalizado
             </p> */}
             <div className="flex justify-center items-baseline my-8">
               <span className="mr-2 text-white text-5xl font-extrabold">
-                $499
+                $90.000 MENSUAL
               </span>
             </div>
 
@@ -399,7 +431,29 @@ function Planes() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                <span>Plan de entrenamiento 100% personalizado</span>
+                <span> PLAN DE ENTRENAMIENTO PERSONALIZADO </span>
+              </li>
+              <li className="flex items-center space-x-3">
+                {/* Icon */}
+                <svg className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fillRule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clipRule="evenodd"
+                  ></path>
+                </svg>
+                <span> PLAN DE ALIMENTACION PERSONALIZADO  </span>
+              </li>
+              <li className="flex items-center space-x-3">
+                {/* Icon */}
+                <svg className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fillRule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clipRule="evenodd"
+                  ></path>
+                </svg>
+                <span> EJERCICIOS GUIADOS POR VIDEO </span>
               </li>
               <li className="flex items-center space-x-3">
                 {/* Icon */}
@@ -415,7 +469,7 @@ function Planes() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                <span>Llamada semanal 1 A 1</span>
+                <span> RECETARIO </span>
               </li>
               <li className="flex items-center space-x-3">
                 {/* Icon */}
@@ -431,7 +485,7 @@ function Planes() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                <span>Mayor confianza, presencia y autoestima.</span>
+                <span> IDEAS DE COMIDAS </span>
               </li>
               <li className="flex items-center space-x-3">
                 {/* Icon */}
@@ -447,7 +501,55 @@ function Planes() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                <span>Seguimiento a través de WhatsApp 24/7</span>
+                <span> LISTA DE COMPRAS </span>
+              </li>
+              <li className="flex items-center space-x-3">
+                {/* Icon */}
+                <svg
+                  className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clipRule="evenodd"
+                  ></path>
+                </svg>
+                <span>GRUPO DE LA COMUNIDAD</span>
+              </li>
+              <li className="flex items-center space-x-3">
+                {/* Icon */}
+                <svg
+                  className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clipRule="evenodd"
+                  ></path>
+                </svg>
+                <span>SEGUIMIENTO POR WHATSAPP</span>
+              </li>
+              <li className="flex items-center space-x-3">
+                {/* Icon */}
+                <svg
+                  className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clipRule="evenodd"
+                  ></path>
+                </svg>
+                <span>VIDEOLLAMADA CADA 15 DIAS 1 A 1 </span>
               </li>
             </ul>
             <button

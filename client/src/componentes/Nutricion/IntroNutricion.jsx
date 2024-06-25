@@ -1,4 +1,4 @@
-import introNutri from "../../assets/intro_nutri.svg"
+import introNutri from "../../assets/nutricion/corte_verdu.jpeg"
 
 function IntroNutricion() {
   return (
