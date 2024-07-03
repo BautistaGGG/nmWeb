@@ -1,5 +1,11 @@
-import transformacionHombre from "../assets/transform_1.3.png";
-import transformacionMujer from "../assets/transform_2.3.png";
+import trans1 from "../assets/transformaciones/1.png";
+import trans2 from "../assets/transformaciones/2.png";
+import trans3 from "../assets/transformaciones/3.png";
+import trans4 from "../assets/transformaciones/4.png";
+import trans5 from "../assets/transformaciones/5.png";
+import trans6 from "../assets/transformaciones/6.png";
+import trans7 from "../assets/transformaciones/7.png";
+
 import { Carousel } from "flowbite-react";
 import { useState, useEffect } from "react";
 
@@ -41,48 +47,53 @@ function Transformaciones() {
             >
               <div className="flex h-full items-center justify-center">
                 <img
-                  src={transformacionMujer}
+                  src={trans1}
                   alt="Slide 1"
-                  className="w-full lg:w-1/2"
+                  className="w-full lg:w-2/5"
                 />
                 <img
-                  src={transformacionHombre}
+                  src={trans2}
                   alt="Slide 2"
-                  className="w-full lg:w-1/2"
+                  className="w-full lg:w-2/5"
                 />
               </div>
+
+              <div className="flex h-full items-center justify-center">
+                  <img
+                    src={trans3}
+                    alt="Slide 3"
+                    className="w-full lg:w-2/5"
+                  />
+                  <img
+                    src={trans4}
+                    alt="Slide 4"
+                    className="w-full lg:w-2/5"
+                  />
+              </div>
+
               <div className="flex h-full items-center justify-center">
                 <img
-                  src={transformacionMujer}
-                  alt="Slide 3"
-                  className="w-full lg:w-1/2"
-                />
-                <img
-                  src={transformacionHombre}
-                  alt="Slide 4"
-                  className="w-full lg:w-1/2"
-                />
-                <img
-                  src={transformacionMujer}
+                  src={trans5}
                   alt="Slide 1"
-                  className="w-full lg:w-1/2"
+                  className="w-full lg:w-2/5"
                 />
                 <img
-                  src={transformacionHombre}
+                  src={trans6}
                   alt="Slide 2"
-                  className="w-full lg:w-1/2"
+                  className="w-full lg:w-2/5"
                 />
               </div>
+
               <div className="flex h-full items-center justify-center">
                 <img
-                  src={transformacionMujer}
+                  src={trans7}
                   alt="Slide 3"
-                  className="w-full lg:w-1/2"
+                  className="w-full lg:w-2/5"
                 />
                 <img
-                  src={transformacionHombre}
+                  src={trans1}
                   alt="Slide 4"
-                  className="w-full lg:w-1/2"
+                  className="w-full lg:w-2/5"
                 />
               </div>
             </Carousel>
@@ -100,11 +111,11 @@ export default Transformaciones;
 // PERDIDA DE CALIDAD DE LAS IMAGENES AL USAR ESTE FORMATO
 // <div className="h-56 lg:block lg:my-0 lg:mx-auto lg:w-3/5 sm:h-64 xl:h-screen 2xl:h-96">
 //   <Carousel slideInterval={2000}>
-//     <img src={transformacionHombre} alt="..." />
-//     <img src={transformacionMujer} alt="..." />
-//     <img src={transformacionHombre} alt="..." />
-//     <img src={transformacionMujer} alt="..." />
-//     <img src={transformacionHombre} alt="..." />
-//     <img src={transformacionMujer} alt="..." />
+//     <img src={trans2} alt="..." />
+//     <img src={trans1} alt="..." />
+//     <img src={trans2} alt="..." />
+//     <img src={trans1} alt="..." />
+//     <img src={trans2} alt="..." />
+//     <img src={trans1} alt="..." />
 //   </Carousel>
 // </div>
