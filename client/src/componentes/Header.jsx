@@ -9,7 +9,8 @@ function Header() {
             ¡DESBLOQUEA TU MAS ALTO POTENCIAL!
           </h1>
           <p className="bg-[#0000006e] border-2 border-[#82027D] text-[12px] lg:text-xl font-bold text-gray-300 lg:leading-8 my-8 lg:mx-28 sm:px-16 lg:px-48">
-            TE AYUDO A MEJORAR TUS HABITOS, MENTALIDAD, AUTOESTIMA, CONFIANZA Y LOGRAR EL CUERPO DE TUS SUEÑOS.
+            TE AYUDO A MEJORAR TUS HABITOS, MENTALIDAD, AUTOESTIMA, CONFIANZA Y
+            LOGRAR EL CUERPO DE TUS SUEÑOS.
           </p>
 
           <div className="flex flex-col space-y-4 sm:space-y-0 sm:flex-row sm:justify-center">
@@ -34,7 +35,10 @@ function Header() {
                 />
               </svg>
             </a>
-            <a href="#info" className="inline-flex justify-center items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-[#82027D] hover:bg-[#82027D] hover:border-[#82027D] focus:ring-4 focus:ring-gray-400">
+            <a
+              href="#info"
+              className="inline-flex justify-center items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-[#82027D] hover:bg-[#82027D] hover:border-[#82027D] focus:ring-4 focus:ring-gray-400"
+            >
               Leer más
             </a>
           </div>

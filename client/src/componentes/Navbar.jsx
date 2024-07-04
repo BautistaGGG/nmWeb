@@ -27,11 +27,14 @@ export default function navbar() {
           HOME
         </a>
 
-        <Link to="/Nutricion" className="text-white hover:text-violeta text-right lg:text-center text-lg font-bold italic pr-2 md:pr-0">
-            NUTRICIÓN
+        <Link
+          to="/Nutricion"
+          className="text-white hover:text-violeta text-right lg:text-center text-lg font-bold italic pr-2 md:pr-0"
+        >
+          NUTRICIÓN
         </Link>
         <a
-          href="#contacto"
+          href="https://linktr.ee/nicomarbantrainner"
           className="text-white hover:text-violeta text-right lg:text-center text-lg font-bold italic pr-2 md:pr-0"
         >
           CONTACTO
