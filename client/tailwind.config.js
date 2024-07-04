@@ -11,10 +11,10 @@ export default module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        nicoPortada: "url('../assets/Nico_Marban_portada.jpg')",
-        planesUno: "url('../assets/Nico_tarjeta_1.jpg')",
-        planesDos: "url('../assets/Nico_tarjeta_2.jpg')",
-        planesTres: "url('../src/assets/Nico_tarjeta_3.jpg')",
+        nicoPortada: "url('/assets/Nico_Marban_portada.jpg')",
+        planesUno: "url('/assets/Nico_tarjeta_1.jpg')",
+        planesDos: "url('/assets/Nico_tarjeta_2.jpg')",
+        planesTres: "url('/assets/Nico_tarjeta_3.jpg')",
       },
       background: {
         blackWhite:
