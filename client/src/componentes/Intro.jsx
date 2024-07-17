@@ -40,31 +40,21 @@ function Intro() {
       <section className="bg-[#040404] dark:bg-gray-900" id="info">
         <article className="gap-16 items-start py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
           <aside className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+            <h2 className="text-center lg:text-left text-[1.65rem] lg:text-4xl m-0 lg:mb-4  tracking-tight font-extrabold text-white dark:text-white"> Nuevos{" "}
+              <span className="text-center lg:text-right italic"> {" "}HABITOS{" "} </span> {" "} <span className="inline text-[#82027D] ml-1"> + </span>
+            </h2>
+
+            <h2 className="text-center lg:text-left text-[1.65rem] lg:text-4xl m-0 lg:mb-4  tracking-tight font-extrabold text-white dark:text-white"> Nueva{" "}
+              <span className="text-center lg:text-right italic">{" "}MENTALIDAD{" "}</span>{" "} <span className="inline text-[#82027D] ml-1"> + </span>
+            </h2>
+
             <h2 className="text-center lg:text-left text-[1.65rem] lg:text-4xl m-0 lg:mb-4  tracking-tight font-extrabold text-white dark:text-white">
-              Nuevos{" "}
-              <span className="text-center lg:text-right italic">
-                {" "}
-                HABITOS{" "}
-              </span>{" "}
-              <span className="block lg:inline text-[#82027D] ml-1"> + </span>
+              Nuevo{" "} <span className="text-center lg:text-right italic"> FISICO </span>{" "} <span className="inline text-[#82027D] ml-1"> = </span>
             </h2>
-            <h2 className="text-center lg:text-left text-[1.65rem] lg:text-4xl m-0 lg:mb-4  tracking-tight font-extrabold text-white dark:text-white">
-              Nueva{" "}
-              <span className="text-center lg:text-right italic">
-                {" "}
-                MENTALIDAD{" "}
-              </span>{" "}
-              <span className="block lg:inline text-[#82027D] ml-1"> + </span>
-            </h2>
-            <h2 className="text-center lg:text-left text-[1.65rem] lg:text-4xl m-0 lg:mb-4  tracking-tight font-extrabold text-white dark:text-white">
-              Nuevo{" "}
-              <span className="text-center lg:text-right italic"> FISICO </span>{" "}
-              <span className="block lg:inline text-[#82027D] ml-1"> = </span>
-            </h2>
-            <h2 className="mb-4 text-center lg:text-left italic text-2xl xl:text-4xl tracking-tight font-extrabold text-[#82027D] dark:text-white">
-              TRANSFORMACIÓN
-            </h2>
-            <p className="mb-4">
+
+            <h2 className="mb-4 text-center lg:text-left italic text-2xl xl:text-4xl tracking-tight font-extrabold text-[#FF3399] lg:text-[#82027D] dark:text-white"> TRANSFORMACIÓN </h2>
+            
+            <p className="mb-4 text-white">
               Tu viaje hacia una versión más fuerte y saludable de vos mismo
               COMIENZA ACÁ. Vas a descubrir el poder de desafiar tus límites y
               superar tus metas. Imaginate despertar cada mañana sintiéndote más
@@ -76,18 +66,8 @@ function Intro() {
 
           <div className="grid grid-cols-2 gap-4">
             <Fade direction="right" triggerOnce>
-              <img
-                loading="lazy"
-                className="lg:m-0 w-full rounded-lg"
-                src={images1[currentImage1]}
-                alt="error"
-              />
-              <img
-                loading="lazy"
-                className="mt-4 w-full lg:mt-10 rounded-lg"
-                src={images2[currentImage2]}
-                alt="error"
-              />
+              <img loading="lazy" className="lg:m-0 w-full rounded-lg" src={images1[currentImage1]} alt="error"/>
+              <img loading="lazy" className="mt-4 w-full lg:mt-10 rounded-lg" src={images2[currentImage2]} alt="error"/>
             </Fade>
           </div>
         </article>
@@ -98,11 +78,7 @@ function Intro() {
       <aside className="flex justify-center items-center">
         <div className="bg-white"></div>
         <div className="bg-[#040404]">
-          <img
-            src={logoNico2}
-            alt="nicolásMarban Logo"
-            className="px-4 h-8 lg:h-32 w-auto"
-          />
+          <img src={logoNico2} alt="nicolásMarban Logo" className="px-4 h-8 lg:h-32 w-auto"/>
         </div>
         <div className="bg-white"></div>
       </aside>
@@ -112,13 +88,7 @@ function Intro() {
       <section className="bg-[#040404] dark:bg-gray-900" id="info">
         <article className="items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:items-start lg:py-16 lg:px-6">
           <Zoom triggerOnce>
-            <video
-              loading="lazy"
-              loop
-              autoPlay
-              muted
-              className="w-4/5  mx-auto lg:m-0 rounded-lg"
-            >
+            <video loading="lazy" loop autoPlay muted className="w-4/5  mx-auto lg:m-0 rounded-lg">
               <source src={videoNico} type="video/mp4" />
             </video>
           </Zoom>
@@ -127,10 +97,9 @@ function Intro() {
             <h2 className="self-center mb-4 text-4xl text-center font-extrabold text-white p-3 border border-white rounded-md dark:text-white tracking-tight">
               MI HISTORIA
             </h2>
-            <p className="my-4 text-white">
-              <span className="font-bold">¡HOLA!</span>, Soy{" "}
-              <span className="font-bold">Nicolás Marbán</span> 👋🏻
-            </p>
+
+            <p className="my-4 text-white"> <span className="font-bold">¡HOLA!</span>, Soy{" "} <span className="font-bold">Nicolás Marbán</span> 👋🏻</p>
+
             <p>
               Hace muchos años atrás no llevaba una vida saludable, no me
               alimentaba bien, no entrenaba lo suficiente, no me sentía bien
@@ -162,30 +131,16 @@ function Intro() {
       {/* TRANSFORMACION NICO*/}
       <section className="bg-white text-center italic text-4xl font-extrabold">
         <article className="items-center py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-          <h2 className="text-black text-3xl lg:text-[2.8rem]">
-            {" "}
-            YO lo logré{" "}
-          </h2>
-          <h2 className="text-black text-3xl lg:text-[2.8rem]">
-            ahora <br className="lg:hidden" />{" "}
-            <span className="text-[#82027D] text-3xl">¡TE TOCA A VOS!</span>{" "}
-          </h2>
+          <h2 className="text-black text-3xl lg:text-[2.8rem]"> {" "} YO lo logré{" "} </h2>
+          <h2 className="text-black text-3xl lg:text-[2.8rem]"> ahora <br className="lg:hidden" />{" "} <span className="text-[#82027D] text-3xl">¡TE TOCA A VOS!</span>{" "} </h2>
 
           <div className="grid grid-cols-2 gap-4 mt-16">
             <Fade direction="left" triggerOnce className="w-full lg:w-3/4 lg:justify-self-end">
-              <img
-                className="rounded-lg"
-                src={nicoTransformacion_1}
-                alt="office content 1"
-              />
+              <img className="rounded-lg" src={nicoTransformacion_1} alt="office content 1"/>
             </Fade>
 
             <Fade direction="right" triggerOnce className="w-full lg:w-3/4 lg:justify-self-start">
-              <img
-                className="rounded-lg"
-                src={nicoTransformacion_2}
-                alt="office content 2"
-              />
+              <img className="rounded-lg" src={nicoTransformacion_2} alt="office content 2"/>
             </Fade>
           </div>
         </article>

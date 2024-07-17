@@ -111,9 +111,9 @@ function Testimonios() {
         DESCUBRE COMO TRANSFORMAR TU CUERPO Y MENTE CON NUESTROS PLANES FITNESS
       </h2>
 
-      <div className="grid grid-cols-1 xl:grid xl:grid-cols-3 gap-8 xl:gap-10 my-12">
+      <div className="grid grid-cols-1 xl:grid xl:grid-cols-3 gap-8 xl:gap-10 my-12" id="planes">
         {/* <!-- Pricing Card --> */}
-        <div className="bg-center bg-cover bg-no-repeat bg-planesUno bg-blend-multiply bg-rosaTarjetas mt-0 xl:mt-12 w-full md:w-[384px] flex flex-col p-6 mx-auto max-w-lg text-center rounded-lg border-2 border-black shadow-xl shadow-[#2d2d2d]">
+        <div className="h-[690px] md:h-auto bg-center bg-cover bg-no-repeat bg-planesUno bg-blend-multiply bg-rosaTarjetas mt-0 xl:mt-12 w-full md:w-[384px] flex flex-col p-6 mx-auto max-w-lg text-center rounded-lg border-2 border-black shadow-xl shadow-[#2d2d2d]">
           <h3 className="mb-4 text-white text-3xl font-bold">
             VOLUMEN MUSCULAR
           </h3>
@@ -369,7 +369,7 @@ function Testimonios() {
         </div>
 
         {/* <!-- Pricing Card --> */}
-        <div className="bg-center bg-cover bg-no-repeat bg-planesTres bg-blend-multiply bg-rosaTarjetas mt-0 xl:mt-12 w-full md:w-[384px] flex flex-col p-6 mx-auto max-w-lg text-center rounded-lg border-2 border-black shadow-xl shadow-[#2d2d2d]">
+        <div className="h-[690px] md:h-auto bg-center bg-cover bg-no-repeat bg-planesTres bg-blend-multiply bg-rosaTarjetas mt-0 xl:mt-12 w-full md:w-[384px] flex flex-col p-6 mx-auto max-w-lg text-center rounded-lg border-2 border-black shadow-xl shadow-[#2d2d2d]">
           <h3 className="mb-4 text-white text-2xl font-bold">COACHING 1 A 1</h3>
           {/* <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
               Programa 100% personalizado

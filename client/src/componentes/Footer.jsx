@@ -61,7 +61,7 @@ function Footer() {
       </section> */}
 
       <footer
-        className="bg-gradient-to-t from-[#82027D] to-[#040404]  shadow sm:flex sm:items-center sm:justify-between p-4 sm:p-6 xl:p-8 dark:bg-gray-00 antialiased"
+        className="bg-gradient-to-t from-[#82027D] to-[#020202]  shadow sm:flex sm:items-center sm:justify-between p-4 sm:p-6 xl:p-8 dark:bg-gray-00 antialiased"
         id="contacto"
       >
         <p className="mb-4 text-sm text-center text-white dark:text-gray-400 sm:mb-0">
