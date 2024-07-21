@@ -40,19 +40,19 @@ function Intro() {
       <section className="bg-[#040404] dark:bg-gray-900" id="info">
         <article className="gap-16 items-start py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
           <aside className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-            <h2 className="text-center lg:text-left text-[1.65rem] lg:text-4xl m-0 lg:mb-4  tracking-tight font-extrabold text-white dark:text-white"> Nuevos{" "}
+            <h2 className="text-left text-[1.65rem] lg:text-4xl m-0 lg:mb-4  tracking-tight font-extrabold text-white dark:text-white"> Nuevos{" "}
               <span className="text-center lg:text-right italic"> {" "}HABITOS{" "} </span> {" "} <span className="inline text-[#82027D] ml-1"> + </span>
             </h2>
 
-            <h2 className="text-center lg:text-left text-[1.65rem] lg:text-4xl m-0 lg:mb-4  tracking-tight font-extrabold text-white dark:text-white"> Nueva{" "}
+            <h2 className="text-left text-[1.65rem] lg:text-4xl m-0 lg:mb-4  tracking-tight font-extrabold text-white dark:text-white"> Nueva{" "}
               <span className="text-center lg:text-right italic">{" "}MENTALIDAD{" "}</span>{" "} <span className="inline text-[#82027D] ml-1"> + </span>
             </h2>
 
-            <h2 className="text-center lg:text-left text-[1.65rem] lg:text-4xl m-0 lg:mb-4  tracking-tight font-extrabold text-white dark:text-white">
+            <h2 className="text-left text-[1.65rem] lg:text-4xl m-0 lg:mb-4  tracking-tight font-extrabold text-white dark:text-white">
               Nuevo{" "} <span className="text-center lg:text-right italic"> FISICO </span>{" "} <span className="inline text-[#82027D] ml-1"> = </span>
             </h2>
 
-            <h2 className="mb-4 text-center lg:text-left italic text-2xl xl:text-4xl tracking-tight font-extrabold text-[#FF3399] lg:text-[#82027D] dark:text-white"> TRANSFORMACIÓN </h2>
+            <h2 className="mb-4 text-left italic text-2xl xl:text-4xl tracking-tight font-extrabold text-[#FF3399] lg:text-[#82027D] dark:text-white"> TRANSFORMACIÓN </h2>
             
             <p className="mb-4 text-white">
               Tu viaje hacia una versión más fuerte y saludable de vos mismo
