@@ -73,8 +73,8 @@ function Planes() {
               Programa 100% personalizado
             </p> */}
             <div className="flex justify-center items-baseline my-8">
-              <span className="mr-2 text-white text-5xl font-extrabold">
-                $12.000 mensual/ $30.000 trimestral
+              <span className="mr-2 text-white text-[28px] lg:text-2xl font-extrabold">
+                $12.000 MENSUAL <br /> $30.000 TRIMESTRAL
               </span>
             </div>
             {/* <!-- List --> */}
@@ -237,14 +237,14 @@ function Planes() {
           {/* <!-- Pricing Card --> */}
           <div className="bg-center bg-cover bg-no-repeat bg-planesDos w-full md:w-[384px] flex flex-col p-6 mx-auto max-w-lg text-center rounded-lg border-2 border-black shadow-xl shadow-[#2d2d2d]">
             <h3 className="mb-4 text-white text-2xl md:text-3xl font-bold">
-              PROGRAMA TRANSFORMACION (MAS ELEGIDO)
+              PROGRAMA TRANSFORMACION (MÁS ELEGIDO)
             </h3>
             {/* <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
               Programa 100% personalizado
             </p> */}
             <div className="flex justify-center items-baseline my-8">
-              <span className="text-white mr-2 text-5xl font-extrabold">
-                $23.000 mensual/ $60.000 Trimestral
+              <span className="text-white mr-2 text-[28px] lg:text-2xl font-extrabold">
+                $23.000 MENSUAL <br /> $60.000 TRIMESTRAL
               </span>
             </div>
             {/* <!-- List --> */}
@@ -419,7 +419,7 @@ function Planes() {
               Programa 100% personalizado
             </p> */}
             <div className="flex justify-center items-baseline my-8">
-              <span className="mr-2 text-white text-5xl font-extrabold">
+              <span className="mr-2 text-white text-[28px] lg:text-2xl font-extrabold">
                 $90.000 MENSUAL
               </span>
             </div>
