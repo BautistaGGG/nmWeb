@@ -42,59 +42,24 @@ function Transformaciones() {
 
           <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
             <Carousel
-              onSlideChange={(index) => setCurrentIndex(index)}
               slideInterval={3000}
+              className="w-full"
             >
-              <div className="flex h-full items-center justify-center">
-                <img
-                  src={trans1}
-                  alt="Slide 1"
-                  className="w-full lg:w-2/5"
-                />
-                <img
-                  src={trans2}
-                  alt="Slide 2"
-                  className="w-full lg:w-2/5"
-                />
+              <div className="flex h-full justify-center items-center overflow-x-auto">
+                <img src={trans1} alt="Slide 1" className="w-full lg:w-2/3 xl:w-1/3" />
+                <img src={trans2} alt="Slide 2" className="hidden sm:block w-full lg:w-2/3 xl:w-1/3" />
               </div>
-
-              <div className="flex h-full items-center justify-center">
-                  <img
-                    src={trans3}
-                    alt="Slide 3"
-                    className="w-full lg:w-2/5"
-                  />
-                  <img
-                    src={trans4}
-                    alt="Slide 4"
-                    className="w-full lg:w-2/5"
-                  />
+              <div className="flex h-full justify-center items-center overflow-x-auto">
+                <img src={trans3} alt="Slide 3" className="w-full lg:w-2/3 xl:w-1/3" />
+                <img src={trans4} alt="Slide 4" className="hidden sm:block w-full lg:w-2/3 xl:w-1/3" />
               </div>
-
-              <div className="flex h-full items-center justify-center">
-                <img
-                  src={trans5}
-                  alt="Slide 1"
-                  className="w-full lg:w-2/5"
-                />
-                <img
-                  src={trans6}
-                  alt="Slide 2"
-                  className="w-full lg:w-2/5"
-                />
+              <div className="flex h-full justify-center items-center overflow-x-auto">
+                <img src={trans5} alt="Slide 5" className="w-full lg:w-2/3 xl:w-1/3" />
+                <img src={trans6} alt="Slide 6" className="hidden sm:block w-full lg:w-2/3 xl:w-1/3" />
               </div>
-
-              <div className="flex h-full items-center justify-center">
-                <img
-                  src={trans7}
-                  alt="Slide 3"
-                  className="w-full lg:w-2/5"
-                />
-                <img
-                  src={trans1}
-                  alt="Slide 4"
-                  className="w-full lg:w-2/5"
-                />
+              <div className="flex h-full justify-center items-center overflow-x-auto">
+                <img src={trans7} alt="Slide 7" className="w-full lg:w-2/3 xl:w-1/3" />
+                <img src={trans1} alt="Slide 8" className="hidden sm:block w-full lg:w-2/3 xl:w-1/3" />
               </div>
             </Carousel>
           </div>
