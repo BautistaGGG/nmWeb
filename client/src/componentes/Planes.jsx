@@ -8,6 +8,7 @@ function Planes() {
   const [paymentMp, setPaymentMp] = useState(null);
   const [price, setPrice] = useState(null);
   const [title, setTitle] = useState("");
+  const [showPriceButtons, setShowPriceButtons] = useState(false);
 
   // MODAL mercadoPago
   const [openModal, setOpenModal] = useState(false);
@@ -41,7 +42,7 @@ function Planes() {
     const id = await payment(); // guardamos el id que nos devuelve el backend
     if (id) {
       setPaymentMp(id);
-      // Seteamos el id en el hook use state
+      console.log(number);
     } else {
       console.log("error");
     }
@@ -199,16 +200,42 @@ function Planes() {
 
             {/* Se dispara el pago  */}
 
-            <button
-              className="bg-[#82027D] hover:bg-[#82027da6] text transition-all text-white  text-center text-sm lg:text-lg font-medium mb-0 mx-auto mt-auto px-5 py-2.5 border-2 border-[#82027D] focus:ring-4 focus:ring-primary-200 rounded-lg dark:text-white  dark:focus:ring-primary-900"
-              onClick={() => {
-                price === 29 && setOpenModal(true),
-                  handlePayment(29),
-                  handleTitle("Masa muscular");
-              }}
-            >
-              {price === 29 ? "COMENCEMOS!" : "¿LISTO PARA EL CAMBIO?"}
-            </button>
+            <div className="flex flex-col items-center mt-28">
+              {!showPriceButtons ? (
+                <button
+                  className="bg-[#82027D] hover:bg-[#82027da6] transition-all text-white text-center text-sm lg:text-lg font-medium mb-0 mx-auto mt-auto px-5 py-2.5 border-2 border-[#82027D] focus:ring-4 focus:ring-primary-200 rounded-lg dark:text-white dark:focus:ring-primary-900"
+                  onClick={() => {
+                    setShowPriceButtons(true);
+                    handlePayment(1);
+                  }}
+                >
+                  ¿LISTO PARA EL CAMBIO?
+                </button>
+              ) : (
+                <div className="flex space-x-4">
+                  <button
+                    className="bg-[#82027D] hover:bg-[#82027da6] transition-all text-white text-center text-sm lg:text-lg font-medium mb-0 mx-auto mt-auto px-5 py-2.5 border-2 border-[#82027D] focus:ring-4 focus:ring-primary-200 rounded-lg dark:text-white dark:focus:ring-primary-900"
+                    onClick={() => {
+                      setOpenModal(true);
+                      handlePayment(12000);
+                      handleTitle("Eliminación de grasa y tonificación");
+                    }}
+                  >
+                    MENSUAL
+                  </button>
+                  <button
+                    className="bg-[#82027D] hover:bg-[#82027da6] transition-all text-white text-center text-sm lg:text-lg font-medium mb-0 mx-auto mt-auto px-5 py-2.5 border-2 border-[#82027D] focus:ring-4 focus:ring-primary-200 rounded-lg dark:text-white dark:focus:ring-primary-900"
+                    onClick={() => {
+                      setOpenModal(true);
+                      handlePayment(30000);
+                      handleTitle("Plan premium de tonificación");
+                    }}
+                  >
+                    TRIMESTRAL
+                  </button>
+                </div>
+              )}
+            </div>
 
             <Modal
               dismissible
@@ -398,16 +425,28 @@ function Planes() {
                 <span>SEGUIMIENTO POR WHATSAPP</span>
               </li>
             </ul>
-            <button
-              className="bg-[#82027D] hover:bg-[#82027da6] transition-all text-white text-center text-sm lg:text-lg font-medium mb-0 mx-auto mt-auto px-5 py-2.5 border-2 border-[#82027D] focus:ring-4 focus:ring-primary-200 rounded-lg dark:text-white  dark:focus:ring-primary-900"
-              onClick={() => {
-                price === 99 && setOpenModal(true),
-                  handlePayment(99),
+            <div className="flex space-x-4 mt-1">
+              <button
+                className="bg-[#82027D] hover:bg-[#82027da6] transition-all text-white text-center text-sm lg:text-lg font-medium mb-0 mx-auto mt-auto px-5 py-2.5 border-2 border-[#82027D] focus:ring-4 focus:ring-primary-200 rounded-lg dark:text-white dark:focus:ring-primary-900"
+                onClick={() => {
+                  setOpenModal(true);
+                  handlePayment(23000);
                   handleTitle("Eliminación de grasa y tonificación");
-              }}
-            >
-              {price === 99 ? "COMENCEMOS!" : "¿LISTO PARA EL CAMBIO?"}
-            </button>
+                }}
+              >
+                MENSUAL
+              </button>
+              <button
+                className="bg-[#82027D] hover:bg-[#82027da6] transition-all text-white text-center text-sm lg:text-lg font-medium mb-0 mx-auto mt-auto px-5 py-2.5 border-2 border-[#82027D] focus:ring-4 focus:ring-primary-200 rounded-lg dark:text-white dark:focus:ring-primary-900"
+                onClick={() => {
+                  setOpenModal(true);
+                  handlePayment(60000);
+                  handleTitle("Plan premium de tonificación");
+                }}
+              >
+                TRIMESTRAL
+              </button>
+            </div>
           </div>
 
           {/* <!-- Pricing Card --> */}
@@ -570,16 +609,18 @@ function Planes() {
                 <span>VIDEOLLAMADA CADA 15 DIAS 1 A 1 </span>
               </li>
             </ul>
-            <button
-              className="bg-[#82027D] hover:bg-[#82027da6] transition-all text-white text-center text-sm lg:text-lg font-medium mb-0 mx-auto mt-auto px-5 py-2.5 border-2 border-[#82027D] focus:ring-4 focus:ring-primary-200 rounded-lg dark:text-white  dark:focus:ring-primary-900"
-              onClick={() => {
-                price === 499 && setOpenModal(true),
-                  handlePayment(499),
-                  handleTitle("Coaching 1 a 1");
-              }}
-            >
-              {price === 499 ? "COMENCEMOS!" : "¿LISTO PARA EL CAMBIO?"}
-            </button>
+            <div className="flex space-x-4 mt-28">
+              <button
+                className="bg-[#82027D] hover:bg-[#82027da6] transition-all text-white text-center text-sm lg:text-lg font-medium mb-0 mx-auto mt-auto px-5 py-2.5 border-2 border-[#82027D] focus:ring-4 focus:ring-primary-200 rounded-lg dark:text-white dark:focus:ring-primary-900"
+                onClick={() => {
+                  setOpenModal(true);
+                  handlePayment(23000);
+                  handleTitle("Eliminación de grasa y tonificación");
+                }}
+              >
+                MENSUAL PREMIUM
+              </button>
+            </div>
           </div>
         </div>
       </div>

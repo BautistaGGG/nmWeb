@@ -1,1 +1,1 @@
-export const mercadoPagoKey = "TEST-bd7260b2-1998-4a2d-a95d-567ecdc82e75"
+export const mercadoPagoKey = "APP_USR-58358916-9b9f-48fe-a0bb-519d2096850a";
