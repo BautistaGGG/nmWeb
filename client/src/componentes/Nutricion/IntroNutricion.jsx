@@ -4,11 +4,19 @@ function IntroNutricion() {
   return (
     <section className="bg-white">
       <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6 pt-[115px] lg:pt-[160px]">
+<<<<<<< HEAD
         <img
           src={introNutri}
           className="w-full rounded-lg"
           alt="dashboardimage"
         />
+=======
+        {/* <img
+          src={introNutri}
+          className="w-full rounded-lg"
+          alt="dashboardimage"
+        /> */}
+>>>>>>> master
 
         <div className="mt-4 md:mt-0">
           <p className="inline text-gray-900 border my-4 border-b-violeta border-x-white border-t-white">

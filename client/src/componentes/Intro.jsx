@@ -86,14 +86,14 @@ function Intro() {
 
       {/* MI HISTORIA */}
       <section className="bg-[#040404] dark:bg-gray-900" id="info">
-        <article className="items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:items-start lg:py-16 lg:px-6">
-          <Zoom triggerOnce>
+        <article className="items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-1 lg:items-start lg:py-16 lg:px-6">
+          {/* <Zoom triggerOnce>
             <video loading="lazy" loop autoPlay muted className="w-4/5  mx-auto lg:m-0 rounded-lg">
               <source src={videoNico} type="video/mp4" />
             </video>
-          </Zoom>
+          </Zoom> */}
 
-          <div className="mt-8 lg:mt-0 flex flex-col font-light text-white sm:text-lg">
+          <div className="mt-8 lg:mt-0 flex flex-col font-light text-white sm:text-lg sm:text-center">
             <h2 className="self-center mb-4 text-4xl text-center font-extrabold text-white p-3 border border-white rounded-md dark:text-white tracking-tight">
               MI HISTORIA
             </h2>

@@ -1,14 +1,35 @@
 import { Navbar } from "flowbite-react";
 import logoNavbar from "../assets/logo_blanco_recortada.png";
 import { Link } from "react-router-dom";
-// import { Fade } from 'react-awesome-reveal';
+import { useEffect, useState } from "react";
 
 export default function navbar() {
+  const [timeLeft, setTimeLeft] = useState(45 * 60); // 45 minutos en segundos
+
+  useEffect(() => {
+    if (timeLeft <= 0) return; // Cuando el temporizador llegue a 0, detener
+
+    const timer = setInterval(() => {
+      setTimeLeft(timeLeft - 1);
+    }, 1000);
+
+    // Limpiar el intervalo cuando el componente se desmonte
+    return () => clearInterval(timer);
+  }, [timeLeft]);
+
+  // Formatear el tiempo restante en mm:ss
+  const formatTime = (seconds) => {
+    const minutes = Math.floor(seconds / 60);
+    const remainingSeconds = seconds % 60;
+    return `${minutes.toString().padStart(2, '0')}:${remainingSeconds.toString().padStart(2, '0')}`;
+  };
   return (
-    <Navbar
-      fluid
-      className="z-50 bg-[#040404] fixed w-full shadow-md shadow-[#00000087] border-gray-200 scroll-smooth"
-    >
+    <>
+    <div className="bg-violeta text-white text-center font-bold p-2 fixed w-full z-[150]">
+      <a href="#planes" className="text-black"> HACE CLICK </a> para TOMAR ACCION - Últimos cupos disponibles: {formatTime(timeLeft)} 
+    </div>
+
+    <Navbar fluid className="z-50 bg-[#040404] fixed w-full shadow-md shadow-[#00000087] border-gray-200 scroll-smooth mt-16 md:mt-10">
       <Navbar.Brand href="/">
         <img
           src={logoNavbar}
@@ -42,5 +63,6 @@ export default function navbar() {
       </Navbar.Collapse>
       {/* </Fade> */}
     </Navbar>
+    </>
   );
 }

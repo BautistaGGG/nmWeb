@@ -64,20 +64,20 @@ function Planes() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 xl:grid xl:grid-cols-3 gap-8 xl:gap-10">
+        <div className="grid grid-cols-1 xl:grid xl:grid-cols-2 gap-8 xl:gap-10">
           {/* <!-- Pricing Card --> */}
           <div className="bg-center bg-cover bg-no-repeat bg-planesUno bg-blend-multiply bg-rosaTarjetas mt-0 xl:mt-12 w-full md:w-[384px] flex flex-col p-6 mx-auto max-w-lg text-center rounded-lg border-2 border-black shadow-xl shadow-[#2d2d2d]">
-            <h3 className="mb-4 text-white text-2xl md:text-3xl font-bold">
+            <h3 className="mb-10 text-white text-2xl md:text-3xl font-bold">
               PROGRAMA INICIAL
             </h3>
             {/* <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
               Programa 100% personalizado
             </p> */}
-            <div className="flex justify-center items-baseline my-8">
+            {/* <div className="flex justify-center items-baseline my-8">
               <span className="mr-2 text-white text-[28px] lg:text-2xl font-extrabold">
                 $12.000 MENSUAL <br /> $30.000 TRIMESTRAL
               </span>
-            </div>
+            </div> */}
             {/* <!-- List --> */}
             <ul role="list" className="mb-8 space-y-4 text-left text-white">
               <li className="flex items-center space-x-3">
@@ -200,7 +200,7 @@ function Planes() {
 
             {/* Se dispara el pago  */}
 
-            <div className="flex flex-col items-center mt-28">
+            <div className="flex flex-col items-center mt-[9em]">
               {!showPriceButtons ? (
                 <button
                   className="bg-[#82027D] hover:bg-[#82027da6] transition-all text-white text-center text-sm lg:text-lg font-medium mb-0 mx-auto mt-auto px-5 py-2.5 border-2 border-[#82027D] focus:ring-4 focus:ring-primary-200 rounded-lg dark:text-white dark:focus:ring-primary-900"
@@ -262,206 +262,18 @@ function Planes() {
           </div>
 
           {/* <!-- Pricing Card --> */}
-          <div className="bg-center bg-cover bg-no-repeat bg-planesDos w-full md:w-[384px] flex flex-col p-6 mx-auto max-w-lg text-center rounded-lg border-2 border-black shadow-xl shadow-[#2d2d2d]">
-            <h3 className="mb-4 text-white text-2xl md:text-3xl font-bold">
-              PROGRAMA TRANSFORMACION (MÁS ELEGIDO)
-            </h3>
-            {/* <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-              Programa 100% personalizado
-            </p> */}
-            <div className="flex justify-center items-baseline my-8">
-              <span className="text-white mr-2 text-[28px] lg:text-2xl font-extrabold">
-                $23.000 MENSUAL <br /> $60.000 TRIMESTRAL
-              </span>
-            </div>
-            {/* <!-- List --> */}
-            <ul role="list" className="mb-8 space-y-4 text-left text-white">
-              <li className="flex items-center space-x-3">
-                {/* <!-- Icon --> */}
-                <svg
-                  className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
-                <span>
-                  {" "}
-                  SELECCIONA ENTRE: AUMENTO DE MASA MUSCULAR - PERDIDA DE GRASA
-                  - TONIFICACION{" "}
-                </span>
-              </li>
-              <li className="flex items-center space-x-3">
-                {/* <!-- Icon --> */}
-                <svg
-                  className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
-                <span> PLAN DE ENTRENAMIENTO PERSONALIZADO </span>
-              </li>
-              <li className="flex items-center space-x-3">
-                {/* <!-- Icon --> */}
-                <svg
-                  className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
-                <span> EJERCICIOS GUIADOS POR VIDEO </span>
-              </li>
-              <li className="flex items-center space-x-3">
-                {/* <!-- Icon --> */}
-                <svg
-                  className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
-                <span> PLAN DE ALIMENTACION PERSONALIZADO </span>
-              </li>
-              <li className="flex items-center space-x-3">
-                {/* <!-- Icon --> */}
-                <svg
-                  className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
-                <span> RECETARIO </span>
-              </li>
-              <li className="flex items-center space-x-3">
-                {/* <!-- Icon --> */}
-                <svg
-                  className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
-                <span> IDEAS DE COMIDAS </span>
-              </li>
-              <li className="flex items-center space-x-3">
-                {/* <!-- Icon --> */}
-                <svg
-                  className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
-                <span>LISTA DE COMPRAS</span>
-              </li>
-              <li className="flex items-center space-x-3">
-                {/* <!-- Icon --> */}
-                <svg
-                  className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
-                <span> GRUPO DE LA COMUNIDAD </span>
-              </li>
-              <li className="flex items-center space-x-3">
-                {/* <!-- Icon --> */}
-                <svg
-                  className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
-                <span>SEGUIMIENTO POR WHATSAPP</span>
-              </li>
-            </ul>
-            <div className="flex space-x-4 mt-1">
-              <button
-                className="bg-[#82027D] hover:bg-[#82027da6] transition-all text-white text-center text-sm lg:text-lg font-medium mb-0 mx-auto mt-auto px-5 py-2.5 border-2 border-[#82027D] focus:ring-4 focus:ring-primary-200 rounded-lg dark:text-white dark:focus:ring-primary-900"
-                onClick={() => {
-                  setOpenModal(true);
-                  handlePayment(23000);
-                  handleTitle("Eliminación de grasa y tonificación");
-                }}
-              >
-                MENSUAL
-              </button>
-              <button
-                className="bg-[#82027D] hover:bg-[#82027da6] transition-all text-white text-center text-sm lg:text-lg font-medium mb-0 mx-auto mt-auto px-5 py-2.5 border-2 border-[#82027D] focus:ring-4 focus:ring-primary-200 rounded-lg dark:text-white dark:focus:ring-primary-900"
-                onClick={() => {
-                  setOpenModal(true);
-                  handlePayment(60000);
-                  handleTitle("Plan premium de tonificación");
-                }}
-              >
-                TRIMESTRAL
-              </button>
-            </div>
-          </div>
-
-          {/* <!-- Pricing Card --> */}
           <div className="bg-center bg-cover bg-no-repeat bg-planesTres bg-blend-multiply bg-rosaTarjetas mt-0 xl:mt-12 w-full md:w-[384px] flex flex-col p-6 mx-auto max-w-lg text-center rounded-lg border-2 border-black shadow-xl shadow-[#2d2d2d]">
-            <h3 className="mb-4 text-white text-2xl md:text-3xl font-bold">
+            <h3 className="mb-10 text-white text-2xl md:text-3xl font-bold">
               COACHING 1 A 1 PRO
             </h3>
             {/* <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
               Programa 100% personalizado
             </p> */}
-            <div className="flex justify-center items-baseline my-8">
+            {/* <div className="flex justify-center items-baseline my-8">
               <span className="mr-2 text-white text-[28px] lg:text-2xl font-extrabold">
                 $90.000 MENSUAL
               </span>
-            </div>
+            </div> */}
 
             <ul role="list" className="mb-8 space-y-4 text-left text-white">
               <li className="flex items-center space-x-3">

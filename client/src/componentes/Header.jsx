@@ -4,7 +4,7 @@ function Header() {
   return (
     <section className="bg-center bg-cover bg-no-repeat bg-nicoPortada bg-blend-multiply bg-gray-500">
       <Fade direction="left" triggerOnce>
-        <div className="px-6 py-24 lg:pt-64 lg:pb-12 mx-auto max-w-screen-xl text-center">
+        <div className="px-6 py-24 lg:pt-[32rem] lg:pb-12 mx-auto max-w-screen-xl text-center md:h-screen">
           <h1 className="italic my-8 lg:mt-0 lg:mb-4 text-2xl lg:text-[2.75rem] xl:text-6xl font-extrabold tracking-tight leading-none text-white">
             ¡DESBLOQUEA TU MAS ALTO POTENCIAL!
           </h1>
