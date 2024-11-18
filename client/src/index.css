@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  scroll-behavior: smooth;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  /* background-color: #242424; */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ESTILOS ACCORDION */
+.divide-y > .flex {
+  background-color: #040404 !important;
+}
+
+.divide-y > .flex:hover {
+  background-color: #09090b !important;
+}
+.divide-y > .flex:focus {
+  background-color: #09090b !important;
+  box-shadow: none;
+}
+
+.divide-y > .flex path {
+  color: #82027d;
+}
+
+/* ESTILOS ACCORDION */
+
+/* ESTILOS NAVBAR */
+nav > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px;
+}
+
+nav div ul div button:hover {
+  color: #82027d;
+}
+
+nav div ul div button svg {
+  height: 24px;
+  width: 24px;
+}
+
+nav > .flex > button:hover {
+  background-color: #040404;
+}
+
+nav > .flex > button:focus {
+  box-shadow: none;
+}
+
+/* ESTILOS NAVBAR */
+
+/* ESTILOS PLANES */
+
+#planes .flex span,
+#planes h3 {
+  text-shadow: 1px 2px 1px black;
+}
+
+#planes ul span {
+  text-shadow: 1px 2px 1px black;
+  font-size: 17px;
+}
+
+#planes button > span {
+  text-shadow: 1px 2px 1px black;
+}
+
+/* ESTILOS PLANES */
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+/* BUTTON MERCADO PAGO */
+
+#planes button span {
+  font-size: 18px;
+  font-weight: 500;
+  text-shadow: 1px 1px 1px black;
+}
+
+#planes button:hover {
+  background: #82027da6 !important;
+}
+
+#walletBrick_container button {
+  /* background-color: green !important;
+    color: yellow !important; */
+}
+
+/* BUTTON MERCADO PAGO */
