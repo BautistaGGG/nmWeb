@@ -1,35 +1,35 @@
 import { Navbar } from "flowbite-react";
 import logoNavbar from "../assets/logo_blanco_recortada.png";
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 
 export default function navbar() {
-  const [timeLeft, setTimeLeft] = useState(45 * 60); // 45 minutos en segundos
+  // const [timeLeft, setTimeLeft] = useState(45 * 60); // 45 minutos en segundos
 
-  useEffect(() => {
-    if (timeLeft <= 0) return; // Cuando el temporizador llegue a 0, detener
+  // useEffect(() => {
+  //   if (timeLeft <= 0) return; // Cuando el temporizador llegue a 0, detener
 
-    const timer = setInterval(() => {
-      setTimeLeft(timeLeft - 1);
-    }, 1000);
+  //   const timer = setInterval(() => {
+  //     setTimeLeft(timeLeft - 1);
+  //   }, 1000);
 
-    // Limpiar el intervalo cuando el componente se desmonte
-    return () => clearInterval(timer);
-  }, [timeLeft]);
+  //   // Limpiar el intervalo cuando el componente se desmonte
+  //   return () => clearInterval(timer);
+  // }, [timeLeft]);
 
-  // Formatear el tiempo restante en mm:ss
-  const formatTime = (seconds) => {
-    const minutes = Math.floor(seconds / 60);
-    const remainingSeconds = seconds % 60;
-    return `${minutes.toString().padStart(2, '0')}:${remainingSeconds.toString().padStart(2, '0')}`;
-  };
+  // // Formatear el tiempo restante en mm:ss
+  // const formatTime = (seconds) => {
+  //   const minutes = Math.floor(seconds / 60);
+  //   const remainingSeconds = seconds % 60;
+  //   return `${minutes.toString().padStart(2, '0')}:${remainingSeconds.toString().padStart(2, '0')}`;
+  // };
   return (
     <>
-    <div className="bg-violeta text-white text-center font-bold p-2 fixed w-full z-[150]">
+    {/* <div className="bg-violeta text-white text-center font-bold p-2 fixed w-full z-[150]">
       <a href="#planes" className="text-black"> HACE CLICK </a> para TOMAR ACCION - Últimos cupos disponibles: {formatTime(timeLeft)} 
-    </div>
+    </div> */}
 
-    <Navbar fluid className="z-50 bg-[#040404] fixed w-full shadow-md shadow-[#00000087] border-gray-200 scroll-smooth mt-16 md:mt-10">
+    <Navbar fluid className="z-50 bg-[#040404] fixed w-full shadow-md shadow-[#00000087] border-gray-200 scroll-smooth">
       <Navbar.Brand href="/">
         <img
           src={logoNavbar}
