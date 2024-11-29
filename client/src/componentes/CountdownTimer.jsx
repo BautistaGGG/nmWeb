@@ -32,7 +32,7 @@ const CountdownTimer = ({ targetDate }) => {
       : "bg-red-500";
 
   return (
-    <div className={`${bgColor} fixed bottom-4 left-1/2 transform -translate-x-1/2  text-white p-4 rounded-md shadow-lg flex flex-row items-center justify-between transition-colors duration-500 ease-in-out z-50 w-11/12 max-w-[60rem]`}>
+    <div className={`${bgColor} fixed bottom-4 left-1/2 transform -translate-x-1/2  text-white p-4 rounded-md shadow-lg flex flex-col md:flex-row items-center justify-between transition-colors duration-500 ease-in-out z-50 w-11/12 max-w-72 ld:max-w-[60rem]`}>
       <h1 className="text-lg font-semibold mb-2">Tu descuento se termina en:</h1>
       <div className="flex space-x-4 text-center">
         <div>
